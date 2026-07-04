@@ -364,15 +364,26 @@ function initControls(){
 
 Promise.all([
   fetch('data/boats.json').then(r=>r.json()),
-  fetch('data/seasons.json').then(r=>r.json())
-]).then(([boats,seasons])=>{
+  fetch('data/seasons.json').then(r=>r.json()),
+  fetch('data/manual_boats.json').then(r=>r.json()).catch(()=>({ships:[],merge_fish:{}}))
+]).then(([boats,seasons,manual])=>{
+  // 手動キュレーション分をマージ（id重複はスキップ）
+  const ids=new Set(boats.ships.map(s=>s.id));
+  (manual.ships||[]).forEach(s=>{ if(!ids.has(s.id)){ boats.ships.push(s); ids.add(s.id); } });
+  // 既存船への魚種追加合成
+  Object.entries(manual.merge_fish||{}).forEach(([id,extra])=>{
+    const s=boats.ships.find(x=>x.id===id);
+    if(s) s.fish=[...new Set([...s.fish,...extra])].sort();
+  });
   DATA=boats; SEASON=seasons;
   buildIndexes();
   initControls();
   renderPrefRow();
   renderGrid();
+  const nShips=boats.ships.length;
+  const nPorts=new Set(boats.ships.map(s=>s.port).filter(Boolean)).size;
   document.getElementById('genDate').textContent =
-    boats.generated ? '｜取得日 '+boats.generated+'（'+boats.ship_count+'隻/'+boats.port_count+'港）' : '';
+    boats.generated ? '｜取得日 '+boats.generated+'（'+nShips+'隻/'+nPorts+'港）' : '';
 }).catch(err=>{
   document.getElementById('grid').innerHTML='<div class="empty">データの読み込みに失敗しました：'+err+'</div>';
 });
