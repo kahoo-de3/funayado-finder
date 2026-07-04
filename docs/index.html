@@ -264,7 +264,6 @@ function renderGrid(){
     const el=document.createElement('div');
     el.className="fish"+(hot?" hot":"")+((!hot&&!state.seasonOnly)?" dim":"");
     el.innerHTML =
-      '<div class="em">'+(sp.emoji||"🐟")+'</div>'+
       '<div class="nm">'+sp.name+'</div>'+
       '<div class="mi">'+monthRangeText(sp.months)+'</div>'+
       '<div class="cnt">'+ (nShips? nShips+'船・'+nPorts+'港' : '該当なし') +'</div>';
@@ -312,7 +311,7 @@ function openDetail(sp){
 
   let html='';
   html+='<div class="dhead">'+
-    '<div class="t"><div class="em">'+(sp.emoji||"🐟")+'</div><div>'+
+    '<div class="t"><div>'+
       '<h2>'+sp.name+'</h2>'+
       '<div class="st '+(hot?'now':'offp')+'">'+
         (hot? '● 今が釣期です（'+jpSeasonName(curMonth)+'・'+curMonth+'月）' : '○ 現在はオフ期（釣期：'+monthRangeText(sp.months)+'）')+
