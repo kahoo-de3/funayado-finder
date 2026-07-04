@@ -1,0 +1,4453 @@
+{
+ "source": "chowari.jp (area=92 関東)",
+ "generated": "2026-07-04",
+ "area": 92,
+ "ship_count": 257,
+ "port_count": 110,
+ "fish_count": 85,
+ "fish_names": [
+  "アイナメ",
+  "アオリイカ",
+  "アカアマダイ",
+  "アカハタ",
+  "アカムツ",
+  "アコウダイ",
+  "アジ",
+  "アナゴ",
+  "アブラボウズ",
+  "アマダイ",
+  "アラ",
+  "イカ",
+  "イサキ",
+  "イサギ",
+  "イシダイ",
+  "イシモチ",
+  "イトヨリ",
+  "イナダ",
+  "イワシ",
+  "ウマヅラ",
+  "オオモンハタ",
+  "オキメバル",
+  "オニカサゴ",
+  "カイワリ",
+  "カサゴ",
+  "カツオ",
+  "カマス",
+  "カワハギ",
+  "カンコ",
+  "カンパチ",
+  "キス",
+  "キダイ",
+  "キハダ",
+  "キハダマグロ",
+  "キビレ",
+  "キメジ",
+  "キントキ",
+  "キンメ",
+  "キンメダイ",
+  "クロダイ",
+  "クロムツ",
+  "クロメバル",
+  "コチ",
+  "ゴマサバ",
+  "サゴシ",
+  "サバ",
+  "サワラ",
+  "シイラ",
+  "シマアジ",
+  "ショウサイフグ",
+  "シロアマダイ",
+  "シロギス",
+  "シロムツ",
+  "シーバス",
+  "スルメイカ",
+  "ソイ",
+  "タイ",
+  "タコ",
+  "タチウオ",
+  "チカメキントキ",
+  "チヌ",
+  "トラフグ",
+  "ハタ",
+  "ハナダイ",
+  "ヒラマサ",
+  "ヒラメ",
+  "フグ",
+  "フッコ",
+  "ブリ",
+  "ベニアコウ",
+  "ホウボウ",
+  "マアジ",
+  "マグロ",
+  "マゴチ",
+  "マダイ",
+  "マダコ",
+  "マハタ",
+  "マルイカ",
+  "ムギイカ",
+  "メダイ",
+  "メヌケ",
+  "メバル",
+  "ヤリイカ",
+  "ユメカサゴ",
+  "ワラサ"
+ ],
+ "ports": [
+  "Dマリーナ",
+  "あみ平マリーナ",
+  "ぷかりさん橋",
+  "三崎港",
+  "上総湊港",
+  "久慈漁港",
+  "久比里",
+  "久留和漁港",
+  "久里浜港",
+  "乙浜漁港",
+  "井尻港",
+  "京浜運河",
+  "今井水門",
+  "伊勢町",
+  "伊戸漁港",
+  "会瀬漁港",
+  "佐島港",
+  "保田港",
+  "八幡橋",
+  "六郷水門",
+  "勝山漁港",
+  "勝浦マリンハーバー",
+  "勝浦港",
+  "千住大橋",
+  "呑川",
+  "品川堀",
+  "外川漁港",
+  "夢の島桟橋",
+  "大原港",
+  "大沢港",
+  "大洗港",
+  "大津漁港",
+  "大磯港",
+  "大黒運河",
+  "太東港",
+  "太海漁港",
+  "寒川港",
+  "小名木川",
+  "小坪漁港",
+  "小浦漁港",
+  "小湊漁港",
+  "小田原新港",
+  "小網代港",
+  "岩漁港",
+  "川名漁港",
+  "川津港",
+  "平和島",
+  "平塚新港",
+  "平塚漁港",
+  "新中川橋",
+  "新今井橋",
+  "新片貝港",
+  "日立港第五埠頭",
+  "早川漁港",
+  "木場",
+  "木更津港",
+  "東京湾マリーナ",
+  "東葛西",
+  "松輪江奈漁港",
+  "松部漁港",
+  "柴漁港",
+  "根岸橋",
+  "横浜港新山下",
+  "江戸川放水路",
+  "江見漁港",
+  "河原子港",
+  "波崎新港",
+  "洲崎栄ノ浦港",
+  "洲崎漁港",
+  "浜行川港",
+  "浦安",
+  "浦賀港",
+  "海老取川",
+  "片瀬漁港",
+  "片貝旧港",
+  "白間津港",
+  "相浜港",
+  "真間川",
+  "真鶴港",
+  "福浦港",
+  "立会川勝島運河",
+  "羽田",
+  "腰越漁港",
+  "茅ヶ崎港",
+  "荒川笹目橋",
+  "葉山芝崎港",
+  "葉山鐙摺港",
+  "走水港",
+  "越中島川",
+  "那珂湊港",
+  "都川",
+  "金沢八景乙舳",
+  "金沢八景平潟",
+  "金沢漁港",
+  "金田漁港",
+  "金谷漁港",
+  "釣船橋",
+  "長井新宿港",
+  "長井港",
+  "長井漆山港",
+  "長井荒崎漁港",
+  "間口漁港",
+  "飯岡漁港",
+  "鮫洲勝島運河",
+  "鴨居大室漁港",
+  "鴨川漁港",
+  "鹿島橋",
+  "鹿嶋新港",
+  "鹿嶋旧港",
+  "鹿本橋"
+ ],
+ "ships": [
+  {
+   "id": "01422",
+   "name": "フィッシュオン大勝",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "上総湊港",
+   "rating": 4.6,
+   "reviews": 68,
+   "url": "https://www.chowari.jp/ship/01422/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カワハギ",
+    "タチウオ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01218",
+   "name": "加平丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "上総湊港",
+   "rating": 4.7,
+   "reviews": 31,
+   "url": "https://www.chowari.jp/ship/01218/",
+   "fish": [
+    "カワハギ",
+    "ホウボウ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00986",
+   "name": "彦次郎丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "上総湊港",
+   "rating": 4.8,
+   "reviews": 38,
+   "url": "https://www.chowari.jp/ship/00986/",
+   "fish": [
+    "アオリイカ",
+    "カワハギ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01421",
+   "name": "福丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "上総湊港",
+   "rating": 5.0,
+   "reviews": 40,
+   "url": "https://www.chowari.jp/ship/01421/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "00719",
+   "name": "角ヶ谷丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "上総湊港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00719/",
+   "fish": [
+    "カサゴ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00902",
+   "name": "有希丸",
+   "pref": "千葉県",
+   "city": "南房総市",
+   "port": "乙浜漁港",
+   "rating": 2.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00902/",
+   "fish": [
+    "アカハタ",
+    "イサキ",
+    "ウマヅラ",
+    "オニカサゴ",
+    "カサゴ",
+    "シマアジ",
+    "スルメイカ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00674",
+   "name": "浜田丸",
+   "pref": "千葉県",
+   "city": "南房総市",
+   "port": "乙浜漁港",
+   "rating": 4.7,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00674/",
+   "fish": [
+    "アジ",
+    "イサキ"
+   ]
+  },
+  {
+   "id": "00983",
+   "name": "九左衛門丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "伊戸漁港",
+   "rating": 4.5,
+   "reviews": 20,
+   "url": "https://www.chowari.jp/ship/00983/",
+   "fish": [
+    "イサキ",
+    "カンパチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00979",
+   "name": "保坂丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "伊戸漁港",
+   "rating": 4.9,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00979/",
+   "fish": [
+    "シマアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01018",
+   "name": "東丸",
+   "pref": "千葉県",
+   "city": "安房郡鋸南町",
+   "port": "保田港",
+   "rating": 4.2,
+   "reviews": 53,
+   "url": "https://www.chowari.jp/ship/01018/",
+   "fish": [
+    "アジ",
+    "イサキ"
+   ]
+  },
+  {
+   "id": "01019",
+   "name": "利八丸",
+   "pref": "千葉県",
+   "city": "安房郡鋸南町",
+   "port": "勝山漁港",
+   "rating": 4.5,
+   "reviews": 328,
+   "url": "https://www.chowari.jp/ship/01019/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "スルメイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00137",
+   "name": "宝生丸",
+   "pref": "千葉県",
+   "city": "安房郡鋸南町",
+   "port": "勝山漁港",
+   "rating": 4.3,
+   "reviews": 235,
+   "url": "https://www.chowari.jp/ship/00137/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "スルメイカ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00696",
+   "name": "With-Ocean",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "勝浦マリンハーバー",
+   "rating": 4.5,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00696/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "カンパチ",
+    "タイ"
+   ]
+  },
+  {
+   "id": "01002",
+   "name": "勝丸 -勝浦-",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "勝浦港",
+   "rating": 4.6,
+   "reviews": 48,
+   "url": "https://www.chowari.jp/ship/01002/",
+   "fish": [
+    "アジ",
+    "オニカサゴ",
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "00970",
+   "name": "光佑丸",
+   "pref": "千葉県",
+   "city": "銚子市",
+   "port": "外川漁港",
+   "rating": 3.5,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00970/",
+   "fish": [
+    "アイナメ",
+    "ソイ",
+    "ハナダイ",
+    "ヒラメ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00969",
+   "name": "家田丸",
+   "pref": "千葉県",
+   "city": "銚子市",
+   "port": "外川漁港",
+   "rating": 4.6,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00969/",
+   "fish": [
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "01495",
+   "name": "政勝丸",
+   "pref": "千葉県",
+   "city": "銚子市",
+   "port": "外川漁港",
+   "rating": 4.8,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/01495/",
+   "fish": [
+    "アラ",
+    "オニカサゴ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00789",
+   "name": "利永丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.5,
+   "reviews": 46,
+   "url": "https://www.chowari.jp/ship/00789/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "ハナダイ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00784",
+   "name": "大吉丸 -大原-",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00784/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "シマアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00729",
+   "name": "天の清栄丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00729/",
+   "fish": [
+    "イサキ",
+    "シマアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00136",
+   "name": "富士丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.5,
+   "reviews": 27,
+   "url": "https://www.chowari.jp/ship/00136/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00787",
+   "name": "広布号",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00787/",
+   "fish": [
+    "ヒラマサ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01221",
+   "name": "拓永丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 3.6,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/01221/",
+   "fish": [
+    "ヒラマサ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00790",
+   "name": "新幸丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.8,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/00790/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00788",
+   "name": "春栄丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.6,
+   "reviews": 36,
+   "url": "https://www.chowari.jp/ship/00788/",
+   "fish": [
+    "イサキ",
+    "シマアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00779",
+   "name": "松栄丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.7,
+   "reviews": 101,
+   "url": "https://www.chowari.jp/ship/00779/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "キントキ",
+    "シマアジ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00765",
+   "name": "板倉丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.0,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00765/",
+   "fish": [
+    "カンパチ",
+    "マダイ",
+    "マハタ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01641",
+   "name": "秀丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01641/",
+   "fish": [
+    "イサキ",
+    "シマアジ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00769",
+   "name": "第三松栄丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.8,
+   "reviews": 56,
+   "url": "https://www.chowari.jp/ship/00769/",
+   "fish": [
+    "イサキ",
+    "シマアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01718",
+   "name": "義丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 5.0,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/01718/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "カサゴ",
+    "キントキ",
+    "ヒラマサ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00676",
+   "name": "義之丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.0,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00676/",
+   "fish": [
+    "イサキ",
+    "シマアジ"
+   ]
+  },
+  {
+   "id": "00774",
+   "name": "長栄丸 -大原-",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.3,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00774/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01344",
+   "name": "隆光丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "大原港",
+   "rating": 4.5,
+   "reviews": 11,
+   "url": "https://www.chowari.jp/ship/01344/",
+   "fish": [
+    "イサキ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01208",
+   "name": "共盛丸",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "大沢港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01208/",
+   "fish": [
+    "クロムツ",
+    "サバ",
+    "スルメイカ",
+    "ヒラマサ",
+    "マダイ",
+    "ヤリイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00131",
+   "name": "勘栄丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "太東港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00131/",
+   "fish": [
+    "イサキ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00728",
+   "name": "重宝丸",
+   "pref": "千葉県",
+   "city": "いすみ市",
+   "port": "太東港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00728/",
+   "fish": [
+    "イサキ",
+    "シマアジ"
+   ]
+  },
+  {
+   "id": "00257",
+   "name": "幸昌丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "太海漁港",
+   "rating": 4.5,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00257/",
+   "fish": [
+    "アカムツ",
+    "アコウダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00469",
+   "name": "聡丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "太海漁港",
+   "rating": 4.4,
+   "reviews": 41,
+   "url": "https://www.chowari.jp/ship/00469/",
+   "fish": [
+    "オニカサゴ",
+    "クロムツ"
+   ]
+  },
+  {
+   "id": "01016",
+   "name": "守山丸",
+   "pref": "千葉県",
+   "city": "千葉市",
+   "port": "寒川港",
+   "rating": 4.8,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/01016/",
+   "fish": [
+    "アジ",
+    "アナゴ",
+    "カサゴ",
+    "シロギス",
+    "タチウオ",
+    "マダコ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "01494",
+   "name": "山賀丸",
+   "pref": "千葉県",
+   "city": "南房総市",
+   "port": "小浦漁港",
+   "rating": 4.2,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/01494/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "オニカサゴ",
+    "カンパチ",
+    "クロムツ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00994",
+   "name": "大栄丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "小湊漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00994/",
+   "fish": [
+    "アジ",
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "00508",
+   "name": "金侑丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "小湊漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00508/",
+   "fish": [
+    "アジ",
+    "オニカサゴ",
+    "クロムツ",
+    "スルメイカ",
+    "マダイ",
+    "マルイカ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00467",
+   "name": "鯛丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "小湊漁港",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00467/",
+   "fish": [
+    "マダイ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00987",
+   "name": "竜一丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "川名漁港",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00987/",
+   "fish": [
+    "イサキ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00472",
+   "name": "不動丸",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "川津港",
+   "rating": 4.8,
+   "reviews": 43,
+   "url": "https://www.chowari.jp/ship/00472/",
+   "fish": [
+    "イカ",
+    "カサゴ",
+    "ハタ",
+    "ヒラメ",
+    "マハタ"
+   ]
+  },
+  {
+   "id": "01167",
+   "name": "新勝丸",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "川津港",
+   "rating": 4.7,
+   "reviews": 36,
+   "url": "https://www.chowari.jp/ship/01167/",
+   "fish": [
+    "ヒラマサ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00761",
+   "name": "第二新亀丸",
+   "pref": "千葉県",
+   "city": "山武市",
+   "port": "新片貝港",
+   "rating": 4.2,
+   "reviews": 25,
+   "url": "https://www.chowari.jp/ship/00761/",
+   "fish": [
+    "ハナダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "01621",
+   "name": "MothershipConnection",
+   "pref": "千葉県",
+   "city": "木更津市",
+   "port": "木更津港",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/01621/",
+   "fish": [
+    "アジ",
+    "サワラ",
+    "シーバス",
+    "マダイ",
+    "マダコ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01152",
+   "name": "希佳丸",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "松部漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01152/",
+   "fish": [
+    "スルメイカ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "01635",
+   "name": "Friend☆Ship",
+   "pref": "千葉県",
+   "city": "市川市",
+   "port": "江戸川放水路",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01635/",
+   "fish": [
+    "サワラ",
+    "チヌ",
+    "マゴチ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01663",
+   "name": "F×F TOKYO BAY",
+   "pref": "千葉県",
+   "city": "市川市",
+   "port": "江戸川放水路",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01663/",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "シーバス",
+    "タコ"
+   ]
+  },
+  {
+   "id": "00880",
+   "name": "林遊船",
+   "pref": "千葉県",
+   "city": "市川市",
+   "port": "江戸川放水路",
+   "rating": 4.6,
+   "reviews": 383,
+   "url": "https://www.chowari.jp/ship/00880/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "キビレ",
+    "クロダイ",
+    "シロギス",
+    "シーバス",
+    "マゴチ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00476",
+   "name": "新栄丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "江見漁港",
+   "rating": 4.6,
+   "reviews": 44,
+   "url": "https://www.chowari.jp/ship/00476/",
+   "fish": [
+    "アマダイ",
+    "クロムツ",
+    "ハタ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00999",
+   "name": "稲荷丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "江見漁港",
+   "rating": 4.6,
+   "reviews": 24,
+   "url": "https://www.chowari.jp/ship/00999/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "アマダイ",
+    "アラ",
+    "イサキ",
+    "オニカサゴ",
+    "カサゴ",
+    "キダイ",
+    "サバ",
+    "マダイ",
+    "マハタ"
+   ]
+  },
+  {
+   "id": "00293",
+   "name": "早川丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "洲崎栄ノ浦港",
+   "rating": 4.5,
+   "reviews": 51,
+   "url": "https://www.chowari.jp/ship/00293/",
+   "fish": [
+    "イサキ",
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "01418",
+   "name": "赤沼丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "洲崎栄ノ浦港",
+   "rating": 5.0,
+   "reviews": 54,
+   "url": "https://www.chowari.jp/ship/01418/",
+   "fish": [
+    "タイ",
+    "ハタ"
+   ]
+  },
+  {
+   "id": "00989",
+   "name": "第2美吉丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "洲崎漁港",
+   "rating": 4.6,
+   "reviews": 16,
+   "url": "https://www.chowari.jp/ship/00989/",
+   "fish": [
+    "オニカサゴ",
+    "カサゴ",
+    "キントキ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00125",
+   "name": "作栄丸",
+   "pref": "千葉県",
+   "city": "勝浦市",
+   "port": "浜行川港",
+   "rating": 4.8,
+   "reviews": 15,
+   "url": "https://www.chowari.jp/ship/00125/",
+   "fish": [
+    "カンパチ",
+    "シマアジ"
+   ]
+  },
+  {
+   "id": "00847",
+   "name": "船宿 岩田屋 本店",
+   "pref": "千葉県",
+   "city": "浦安市",
+   "port": "浦安",
+   "rating": 4.7,
+   "reviews": 63,
+   "url": "https://www.chowari.jp/ship/00847/",
+   "fish": [
+    "アジ",
+    "シロギス",
+    "タコ",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00128",
+   "name": "西栄",
+   "pref": "千葉県",
+   "city": "浦安市",
+   "port": "浦安",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00128/",
+   "fish": [
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00626",
+   "name": "幸辰丸",
+   "pref": "千葉県",
+   "city": "山武市",
+   "port": "片貝旧港",
+   "rating": 4.5,
+   "reviews": 22,
+   "url": "https://www.chowari.jp/ship/00626/",
+   "fish": [
+    "アジ",
+    "ハナダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00628",
+   "name": "第1二三丸",
+   "pref": "千葉県",
+   "city": "山武市",
+   "port": "片貝旧港",
+   "rating": 4.5,
+   "reviews": 31,
+   "url": "https://www.chowari.jp/ship/00628/",
+   "fish": [
+    "イサキ",
+    "キンメダイ",
+    "ハナダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00763",
+   "name": "第三孝徳丸",
+   "pref": "千葉県",
+   "city": "山武市",
+   "port": "片貝旧港",
+   "rating": 4.3,
+   "reviews": 19,
+   "url": "https://www.chowari.jp/ship/00763/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00991",
+   "name": "甚四郎丸",
+   "pref": "千葉県",
+   "city": "南房総市",
+   "port": "白間津港",
+   "rating": 5.0,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00991/",
+   "fish": [
+    "イカ"
+   ]
+  },
+  {
+   "id": "01047",
+   "name": "安田丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "相浜港",
+   "rating": 4.7,
+   "reviews": 114,
+   "url": "https://www.chowari.jp/ship/01047/",
+   "fish": [
+    "イサキ",
+    "シマアジ"
+   ]
+  },
+  {
+   "id": "01013",
+   "name": "良栄丸",
+   "pref": "千葉県",
+   "city": "館山市",
+   "port": "相浜港",
+   "rating": 3.5,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01013/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "イサキ",
+    "カサゴ",
+    "カンパチ",
+    "キントキ",
+    "ヒラメ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00890",
+   "name": "洋平丸",
+   "pref": "千葉県",
+   "city": "市川市",
+   "port": "真間川",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00890/",
+   "fish": [
+    "アジ",
+    "イシモチ"
+   ]
+  },
+  {
+   "id": "01427",
+   "name": "TARGET",
+   "pref": "千葉県",
+   "city": "千葉市",
+   "port": "都川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01427/",
+   "fish": [
+    "クロダイ",
+    "シーバス"
+   ]
+  },
+  {
+   "id": "00984",
+   "name": "勘次郎丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "金谷漁港",
+   "rating": 4.3,
+   "reviews": 54,
+   "url": "https://www.chowari.jp/ship/00984/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "01712",
+   "name": "高梨丸",
+   "pref": "千葉県",
+   "city": "富津市",
+   "port": "金谷漁港",
+   "rating": 4.8,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/01712/",
+   "fish": [
+    "アジ",
+    "クロダイ"
+   ]
+  },
+  {
+   "id": "01017",
+   "name": "三次郎丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.5,
+   "reviews": 89,
+   "url": "https://www.chowari.jp/ship/01017/",
+   "fish": [
+    "アジ",
+    "アラ",
+    "オニカサゴ",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00953",
+   "name": "優光丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.6,
+   "reviews": 71,
+   "url": "https://www.chowari.jp/ship/00953/",
+   "fish": [
+    "アジ",
+    "シロギス",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00954",
+   "name": "太幸丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.4,
+   "reviews": 21,
+   "url": "https://www.chowari.jp/ship/00954/",
+   "fish": [
+    "イサキ",
+    "ハナダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00899",
+   "name": "梅花丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.7,
+   "reviews": 305,
+   "url": "https://www.chowari.jp/ship/00899/",
+   "fish": [
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00777",
+   "name": "長五郎丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.4,
+   "reviews": 32,
+   "url": "https://www.chowari.jp/ship/00777/",
+   "fish": [
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00629",
+   "name": "隆正丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.5,
+   "reviews": 38,
+   "url": "https://www.chowari.jp/ship/00629/",
+   "fish": [
+    "ハナダイ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "00952",
+   "name": "龍鳳丸",
+   "pref": "千葉県",
+   "city": "旭市",
+   "port": "飯岡漁港",
+   "rating": 4.7,
+   "reviews": 15,
+   "url": "https://www.chowari.jp/ship/00952/",
+   "fish": [
+    "アジ",
+    "キス",
+    "ショウサイフグ",
+    "シロギス",
+    "ハナダイ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01329",
+   "name": "第三新生合同丸",
+   "pref": "千葉県",
+   "city": "鴨川市",
+   "port": "鴨川漁港",
+   "rating": 4.6,
+   "reviews": 48,
+   "url": "https://www.chowari.jp/ship/01329/",
+   "fish": [
+    "アカハタ",
+    "アカムツ",
+    "アジ",
+    "イナダ",
+    "オニカサゴ",
+    "カサゴ",
+    "クロムツ",
+    "サバ",
+    "スルメイカ",
+    "ヒラメ",
+    "マハタ",
+    "マルイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00898",
+   "name": "DREAM LAND RESORT",
+   "pref": "埼玉県",
+   "city": "三郷市",
+   "port": "新中川橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00898/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "シーバス"
+   ]
+  },
+  {
+   "id": "00736",
+   "name": "けやき丸",
+   "pref": "埼玉県",
+   "city": "戸田市",
+   "port": "荒川笹目橋",
+   "rating": 4.6,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00736/",
+   "fish": [
+    "アカムツ",
+    "キメジ",
+    "サバ",
+    "サワラ",
+    "シイラ",
+    "シーバス",
+    "タチウオ",
+    "マダイ",
+    "マダコ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01332",
+   "name": "Sea Frog",
+   "pref": "東京都",
+   "city": "葛飾区",
+   "port": "あみ平マリーナ",
+   "rating": 5.0,
+   "reviews": 14,
+   "url": "https://www.chowari.jp/ship/01332/",
+   "fish": [
+    "アジ",
+    "カツオ",
+    "カンパチ",
+    "キハダ",
+    "シーバス",
+    "ブリ",
+    "マゴチ",
+    "マダイ",
+    "メバル",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01193",
+   "name": "丸裕",
+   "pref": "東京都",
+   "city": "港区",
+   "port": "京浜運河",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/01193/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "01597",
+   "name": "柊丸",
+   "pref": "東京都",
+   "city": "江戸川区",
+   "port": "今井水門",
+   "rating": 5.0,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/01597/",
+   "fish": [
+    "カサゴ",
+    "キハダマグロ",
+    "クロダイ",
+    "サワラ",
+    "シーバス",
+    "トラフグ",
+    "ヒラマサ",
+    "マダイ",
+    "マダコ",
+    "メバル",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01274",
+   "name": "ミナミ釣船",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "六郷水門",
+   "rating": 4.7,
+   "reviews": 190,
+   "url": "https://www.chowari.jp/ship/01274/",
+   "fish": [
+    "アジ",
+    "アナゴ",
+    "アマダイ",
+    "カサゴ",
+    "シロギス",
+    "タチウオ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01212",
+   "name": "入舟",
+   "pref": "東京都",
+   "city": "足立区",
+   "port": "千住大橋",
+   "rating": 4.5,
+   "reviews": 8,
+   "url": "https://www.chowari.jp/ship/01212/",
+   "fish": [
+    "シロギス"
+   ]
+  },
+  {
+   "id": "01725",
+   "name": "ゴーゴーガイドサービス",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "呑川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01725/",
+   "fish": [
+    "アジ",
+    "シーバス",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00698",
+   "name": "三河屋",
+   "pref": "東京都",
+   "city": "品川区",
+   "port": "品川堀",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00698/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "01606",
+   "name": "アップタイドクルーズ",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "夢の島桟橋",
+   "rating": 5.0,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/01606/",
+   "fish": [
+    "シーバス",
+    "マゴチ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00939",
+   "name": "船宿 さわ浦",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "小名木川",
+   "rating": 4.2,
+   "reviews": 31,
+   "url": "https://www.chowari.jp/ship/00939/",
+   "fish": [
+    "イナダ",
+    "サワラ",
+    "マゴチ"
+   ]
+  },
+  {
+   "id": "00976",
+   "name": "船宿まる八",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "平和島",
+   "rating": 4.9,
+   "reviews": 30,
+   "url": "https://www.chowari.jp/ship/00976/",
+   "fish": [
+    "アジ",
+    "サバ",
+    "シロギス",
+    "マアジ"
+   ]
+  },
+  {
+   "id": "01650",
+   "name": "船宿ウォッチかいと丸",
+   "pref": "東京都",
+   "city": "江戸川区",
+   "port": "新今井橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01650/",
+   "fish": [
+    "マダイ",
+    "マダコ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00271",
+   "name": "深川 吉野屋",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "木場",
+   "rating": 4.5,
+   "reviews": 104,
+   "url": "https://www.chowari.jp/ship/00271/",
+   "fish": [
+    "アジ",
+    "タチウオ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01432",
+   "name": "シーホース",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "東京湾マリーナ",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01432/",
+   "fish": [
+    "クロダイ",
+    "シーバス"
+   ]
+  },
+  {
+   "id": "00159",
+   "name": "須原屋",
+   "pref": "東京都",
+   "city": "江戸川区",
+   "port": "東葛西",
+   "rating": 4.6,
+   "reviews": 141,
+   "url": "https://www.chowari.jp/ship/00159/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "01426",
+   "name": "PLAYFUL FISHING",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "海老取川",
+   "rating": 4.8,
+   "reviews": 8,
+   "url": "https://www.chowari.jp/ship/01426/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カサゴ",
+    "クロダイ",
+    "サワラ",
+    "シロギス",
+    "シーバス",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01678",
+   "name": "釣り船鶴",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "海老取川",
+   "rating": 4.8,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/01678/",
+   "fish": [
+    "アジ",
+    "ヒラメ",
+    "マゴチ"
+   ]
+  },
+  {
+   "id": "01460",
+   "name": "大山丸",
+   "pref": "東京都",
+   "city": "品川区",
+   "port": "立会川勝島運河",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01460/",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "カサゴ",
+    "キス",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00946",
+   "name": "小林丸",
+   "pref": "東京都",
+   "city": "品川区",
+   "port": "立会川勝島運河",
+   "rating": 4.8,
+   "reviews": 20,
+   "url": "https://www.chowari.jp/ship/00946/",
+   "fish": [
+    "イシモチ",
+    "シロギス",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00884",
+   "name": "釣り船小林",
+   "pref": "東京都",
+   "city": "品川区",
+   "port": "立会川勝島運河",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00884/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "00702",
+   "name": "かめだや",
+   "pref": "東京都",
+   "city": "大田区",
+   "port": "羽田",
+   "rating": 4.7,
+   "reviews": 131,
+   "url": "https://www.chowari.jp/ship/00702/",
+   "fish": [
+    "アジ",
+    "シロギス",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "01532",
+   "name": "船宿内田",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "越中島川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01532/",
+   "fish": [
+    "クロダイ",
+    "フッコ"
+   ]
+  },
+  {
+   "id": "00161",
+   "name": "瀬川丸",
+   "pref": "東京都",
+   "city": "江東区",
+   "port": "釣船橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00161/",
+   "fish": [
+    "アジ",
+    "サワラ",
+    "シロギス",
+    "シーバス",
+    "タチウオ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01322",
+   "name": "船宿いわた",
+   "pref": "東京都",
+   "city": "品川区",
+   "port": "鮫洲勝島運河",
+   "rating": 4.7,
+   "reviews": 73,
+   "url": "https://www.chowari.jp/ship/01322/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "シロギス",
+    "タチウオ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00947",
+   "name": "釣り船 ゑびや",
+   "pref": "東京都",
+   "city": "港区",
+   "port": "鹿島橋",
+   "rating": 4.3,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00947/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "01203",
+   "name": "船宿豆や",
+   "pref": "東京都",
+   "city": "江戸川区",
+   "port": "鹿本橋",
+   "rating": 4.3,
+   "reviews": 29,
+   "url": "https://www.chowari.jp/ship/01203/",
+   "fish": [
+    "アジ",
+    "サワラ",
+    "シロギス",
+    "マアジ"
+   ]
+  },
+  {
+   "id": "00206",
+   "name": "SEAKURO",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "Dマリーナ",
+   "rating": 4.7,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00206/",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "シーバス"
+   ]
+  },
+  {
+   "id": "01387",
+   "name": "Sea floating",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "ぷかりさん橋",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01387/",
+   "fish": [
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00345",
+   "name": "佐円丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "三崎港",
+   "rating": 4.4,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/00345/",
+   "fish": [
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00290",
+   "name": "やまてん丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "久比里",
+   "rating": 4.3,
+   "reviews": 110,
+   "url": "https://www.chowari.jp/ship/00290/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "カワハギ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00910",
+   "name": "隠居丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "久留和漁港",
+   "rating": 3.5,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00910/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "アマダイ",
+    "クロムツ",
+    "ハタ",
+    "ヒラメ"
+   ]
+  },
+  {
+   "id": "01159",
+   "name": "網屋丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "久里浜港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01159/",
+   "fish": [
+    "タチウオ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00457",
+   "name": "黒川本家 -久里浜-",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "久里浜港",
+   "rating": 4.7,
+   "reviews": 145,
+   "url": "https://www.chowari.jp/ship/00457/",
+   "fish": [
+    "アジ",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00900",
+   "name": "はじめ丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "井尻港",
+   "rating": 4.0,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00900/",
+   "fish": [
+    "イナダ",
+    "キハダマグロ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00866",
+   "name": "第八勝丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "伊勢町",
+   "rating": 4.7,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00866/",
+   "fish": [
+    "アジ",
+    "サバ"
+   ]
+  },
+  {
+   "id": "00144",
+   "name": "つね丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "佐島港",
+   "rating": 4.9,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/00144/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00296",
+   "name": "佐島海楽園",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "佐島港",
+   "rating": 4.7,
+   "reviews": 36,
+   "url": "https://www.chowari.jp/ship/00296/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "イサキ",
+    "カサゴ"
+   ]
+  },
+  {
+   "id": "00346",
+   "name": "志平丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "佐島港",
+   "rating": 4.5,
+   "reviews": 241,
+   "url": "https://www.chowari.jp/ship/00346/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00809",
+   "name": "深田家",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "佐島港",
+   "rating": 4.4,
+   "reviews": 102,
+   "url": "https://www.chowari.jp/ship/00809/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "カサゴ",
+    "サバ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00796",
+   "name": "深田正夫丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "佐島港",
+   "rating": 4.7,
+   "reviews": 25,
+   "url": "https://www.chowari.jp/ship/00796/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "カツオ",
+    "キハダマグロ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ",
+    "マハタ"
+   ]
+  },
+  {
+   "id": "01502",
+   "name": "濱生丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "八幡橋",
+   "rating": 4.5,
+   "reviews": 48,
+   "url": "https://www.chowari.jp/ship/01502/",
+   "fish": [
+    "アナゴ",
+    "マゴチ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01509",
+   "name": "鴨下丸kawana",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "八幡橋",
+   "rating": 4.7,
+   "reviews": 24,
+   "url": "https://www.chowari.jp/ship/01509/",
+   "fish": [
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00711",
+   "name": "まるまつ丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "大津漁港",
+   "rating": 4.5,
+   "reviews": 10,
+   "url": "https://www.chowari.jp/ship/00711/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "00824",
+   "name": "五平丸",
+   "pref": "神奈川県",
+   "city": "中郡大磯町",
+   "port": "大磯港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00824/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "キス",
+    "サバ",
+    "ブリ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00683",
+   "name": "邦丸 -大磯港-",
+   "pref": "神奈川県",
+   "city": "中郡大磯町",
+   "port": "大磯港",
+   "rating": 4.6,
+   "reviews": 23,
+   "url": "https://www.chowari.jp/ship/00683/",
+   "fish": [
+    "アジ",
+    "カツオ",
+    "キハダマグロ",
+    "クロムツ",
+    "サバ",
+    "シイラ",
+    "シロギス",
+    "シロムツ",
+    "マグロ"
+   ]
+  },
+  {
+   "id": "00204",
+   "name": "Bay Fighter",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "大黒運河",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00204/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01428",
+   "name": "PALLAS FISHING GUIDE SERVICE",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "大黒運河",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01428/",
+   "fish": [
+    "シーバス",
+    "タコ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "01075",
+   "name": "太郎丸",
+   "pref": "神奈川県",
+   "city": "逗子市",
+   "port": "小坪漁港",
+   "rating": 4.6,
+   "reviews": 47,
+   "url": "https://www.chowari.jp/ship/01075/",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "キンメダイ",
+    "クロムツ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01584",
+   "name": "椿丸",
+   "pref": "神奈川県",
+   "city": "逗子市",
+   "port": "小坪漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01584/",
+   "fish": [
+    "アジ",
+    "サバ"
+   ]
+  },
+  {
+   "id": "00807",
+   "name": "鮎丸",
+   "pref": "神奈川県",
+   "city": "逗子市",
+   "port": "小坪漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00807/",
+   "fish": [
+    "アジ",
+    "サバ"
+   ]
+  },
+  {
+   "id": "00821",
+   "name": "もと明丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00821/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "アマダイ",
+    "サバ",
+    "シロムツ"
+   ]
+  },
+  {
+   "id": "00909",
+   "name": "よしだ丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": 4.6,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00909/",
+   "fish": [
+    "アカムツ",
+    "カサゴ",
+    "クロムツ"
+   ]
+  },
+  {
+   "id": "00813",
+   "name": "八隆丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00813/",
+   "fish": [
+    "アジ",
+    "キンメダイ",
+    "クロムツ",
+    "サバ",
+    "スルメイカ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00814",
+   "name": "勝美丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": 4.5,
+   "reviews": 51,
+   "url": "https://www.chowari.jp/ship/00814/",
+   "fish": [
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "00704",
+   "name": "海真丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00704/",
+   "fish": [
+    "アジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00843",
+   "name": "藤八丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00843/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "サバ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01766",
+   "name": "豊幸丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "小田原新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01766/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "アマダイ",
+    "カサゴ",
+    "サバ"
+   ]
+  },
+  {
+   "id": "00709",
+   "name": "所ヱ門丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "小網代港",
+   "rating": 4.4,
+   "reviews": 12,
+   "url": "https://www.chowari.jp/ship/00709/",
+   "fish": [
+    "イサキ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00904",
+   "name": "山真丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "岩漁港",
+   "rating": 4.0,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00904/",
+   "fish": [
+    "カサゴ"
+   ]
+  },
+  {
+   "id": "01689",
+   "name": "第八緑龍丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "岩漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01689/",
+   "fish": [
+    "アオリイカ",
+    "アカムツ",
+    "イサキ",
+    "クロムツ",
+    "ハタ",
+    "マグロ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00908",
+   "name": "かりゆし丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚新港",
+   "rating": 4.5,
+   "reviews": 48,
+   "url": "https://www.chowari.jp/ship/00908/",
+   "fish": [
+    "サゴシ",
+    "シロアマダイ"
+   ]
+  },
+  {
+   "id": "01081",
+   "name": "庄治郎丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚新港",
+   "rating": 4.6,
+   "reviews": 169,
+   "url": "https://www.chowari.jp/ship/01081/",
+   "fish": [
+    "アジ",
+    "イシダイ",
+    "カサゴ",
+    "シイラ",
+    "ヒラメ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "01680",
+   "name": "第三かりゆし丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚新港",
+   "rating": 4.8,
+   "reviews": 24,
+   "url": "https://www.chowari.jp/ship/01680/",
+   "fish": [
+    "イトヨリ",
+    "イナダ",
+    "オオモンハタ",
+    "カサゴ",
+    "キンメ",
+    "クロムツ",
+    "サバ",
+    "ハナダイ"
+   ]
+  },
+  {
+   "id": "01384",
+   "name": "優神丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚漁港",
+   "rating": 4.6,
+   "reviews": 17,
+   "url": "https://www.chowari.jp/ship/01384/",
+   "fish": [
+    "イナダ",
+    "カツオ",
+    "キハダマグロ",
+    "キンメダイ",
+    "クロムツ",
+    "ブリ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01714",
+   "name": "太一丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01714/",
+   "fish": [
+    "アカアマダイ",
+    "アカハタ",
+    "カサゴ",
+    "キハダ",
+    "ゴマサバ",
+    "シイラ",
+    "シロアマダイ",
+    "ヒラメ",
+    "マアジ",
+    "マゴチ"
+   ]
+  },
+  {
+   "id": "01377",
+   "name": "登喜丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚漁港",
+   "rating": 4.5,
+   "reviews": 38,
+   "url": "https://www.chowari.jp/ship/01377/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "イナダ",
+    "カツオ",
+    "キス",
+    "キハダマグロ",
+    "クロムツ",
+    "サバ",
+    "シイラ",
+    "ヒラメ",
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00826",
+   "name": "豊漁丸",
+   "pref": "神奈川県",
+   "city": "平塚市",
+   "port": "平塚漁港",
+   "rating": 4.6,
+   "reviews": 53,
+   "url": "https://www.chowari.jp/ship/00826/",
+   "fish": [
+    "アジ",
+    "キス"
+   ]
+  },
+  {
+   "id": "01672",
+   "name": "光義丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "早川漁港",
+   "rating": 4.7,
+   "reviews": 18,
+   "url": "https://www.chowari.jp/ship/01672/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カツオ",
+    "キハダ",
+    "キンメダイ",
+    "クロムツ",
+    "スルメイカ",
+    "ムギイカ"
+   ]
+  },
+  {
+   "id": "00820",
+   "name": "隠徳丸",
+   "pref": "神奈川県",
+   "city": "小田原市",
+   "port": "早川漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00820/",
+   "fish": [
+    "カツオ",
+    "キハダマグロ",
+    "シイラ"
+   ]
+  },
+  {
+   "id": "01036",
+   "name": "あまさけや丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.7,
+   "reviews": 10,
+   "url": "https://www.chowari.jp/ship/01036/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサギ",
+    "カサゴ",
+    "サバ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00842",
+   "name": "かねいち丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00842/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00799",
+   "name": "せどおと丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.0,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00799/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "オニカサゴ",
+    "カワハギ",
+    "サバ",
+    "チカメキントキ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00922",
+   "name": "久助丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.1,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00922/",
+   "fish": [
+    "アジ",
+    "イサギ",
+    "カワハギ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01191",
+   "name": "伝五郎丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.6,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/01191/",
+   "fish": [
+    "アジ",
+    "イサギ",
+    "サバ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01190",
+   "name": "佑幸丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.7,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/01190/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イシダイ",
+    "オニカサゴ",
+    "カマス",
+    "クロムツ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00453",
+   "name": "大松丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.6,
+   "reviews": 127,
+   "url": "https://www.chowari.jp/ship/00453/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01379",
+   "name": "太郎八丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01379/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "カサゴ",
+    "サバ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00332",
+   "name": "成銀丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.4,
+   "reviews": 271,
+   "url": "https://www.chowari.jp/ship/00332/",
+   "fish": [
+    "イサキ",
+    "マアジ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01192",
+   "name": "新徳丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 5.0,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/01192/",
+   "fish": [
+    "アジ",
+    "イサギ",
+    "サバ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00331",
+   "name": "棒面丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.4,
+   "reviews": 22,
+   "url": "https://www.chowari.jp/ship/00331/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "サバ",
+    "マダイ",
+    "マルイカ",
+    "ヤリイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01696",
+   "name": "正海丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.8,
+   "reviews": 22,
+   "url": "https://www.chowari.jp/ship/01696/",
+   "fish": [
+    "イサキ",
+    "カツオ",
+    "キハダ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01617",
+   "name": "浅吉丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01617/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "カワハギ",
+    "サバ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01037",
+   "name": "浜鈴丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01037/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イナダ",
+    "カサゴ",
+    "カツオ",
+    "カワハギ",
+    "キハダマグロ",
+    "サバ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00282",
+   "name": "瀬戸丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": 4.5,
+   "reviews": 124,
+   "url": "https://www.chowari.jp/ship/00282/",
+   "fish": [
+    "イサキ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00794",
+   "name": "第十五鈴米丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "松輪江奈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00794/",
+   "fish": [
+    "イサキ",
+    "カツオ",
+    "キハダ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01085",
+   "name": "はやぶさ丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "柴漁港",
+   "rating": 4.7,
+   "reviews": 67,
+   "url": "https://www.chowari.jp/ship/01085/",
+   "fish": [
+    "マアジ"
+   ]
+  },
+  {
+   "id": "01733",
+   "name": "BLUE LANE YOKOHAMA",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "根岸橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01733/",
+   "fish": [
+    "アジ",
+    "サワラ",
+    "シーバス",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00918",
+   "name": "広島屋",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "横浜港新山下",
+   "rating": 4.6,
+   "reviews": 147,
+   "url": "https://www.chowari.jp/ship/00918/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00734",
+   "name": "打木屋釣船店",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "横浜港新山下",
+   "rating": 4.5,
+   "reviews": 267,
+   "url": "https://www.chowari.jp/ship/00734/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00945",
+   "name": "みのる丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "浦賀港",
+   "rating": 4.5,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00945/",
+   "fish": [
+    "カサゴ"
+   ]
+  },
+  {
+   "id": "00366",
+   "name": "ゆうせい丸",
+   "pref": "神奈川県",
+   "city": "藤沢市",
+   "port": "片瀬漁港",
+   "rating": 4.4,
+   "reviews": 499,
+   "url": "https://www.chowari.jp/ship/00366/",
+   "fish": [
+    "アマダイ",
+    "カサゴ",
+    "ヒラメ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00701",
+   "name": "島きち丸",
+   "pref": "神奈川県",
+   "city": "藤沢市",
+   "port": "片瀬漁港",
+   "rating": 4.4,
+   "reviews": 341,
+   "url": "https://www.chowari.jp/ship/00701/",
+   "fish": [
+    "アジ",
+    "カツオ",
+    "キハダ",
+    "サバ",
+    "スルメイカ",
+    "ムギイカ"
+   ]
+  },
+  {
+   "id": "00815",
+   "name": "ふみ丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 4.5,
+   "reviews": 23,
+   "url": "https://www.chowari.jp/ship/00815/",
+   "fish": [
+    "アカハタ",
+    "アマダイ",
+    "オニカサゴ",
+    "カサゴ"
+   ]
+  },
+  {
+   "id": "00818",
+   "name": "富丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 4.6,
+   "reviews": 42,
+   "url": "https://www.chowari.jp/ship/00818/",
+   "fish": [
+    "アカハタ",
+    "アカムツ",
+    "アマダイ",
+    "オニカサゴ",
+    "カサゴ"
+   ]
+  },
+  {
+   "id": "01368",
+   "name": "山本丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 4.9,
+   "reviews": 19,
+   "url": "https://www.chowari.jp/ship/01368/",
+   "fish": [
+    "アカムツ",
+    "アマダイ",
+    "アラ",
+    "イトヨリ",
+    "イナダ",
+    "カサゴ",
+    "キンメダイ",
+    "クロムツ",
+    "クロメバル",
+    "タイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01496",
+   "name": "海良丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 4.7,
+   "reviews": 37,
+   "url": "https://www.chowari.jp/ship/01496/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "イサキ",
+    "カサゴ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00819",
+   "name": "石川丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00819/",
+   "fish": [
+    "アオリイカ",
+    "アマダイ",
+    "イサキ",
+    "カサゴ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00873",
+   "name": "誠いち丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡真鶴町",
+   "port": "真鶴港",
+   "rating": 4.5,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00873/",
+   "fish": [
+    "スルメイカ",
+    "ムギイカ"
+   ]
+  },
+  {
+   "id": "00867",
+   "name": "吾一丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡湯河原町",
+   "port": "福浦港",
+   "rating": 4.5,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00867/",
+   "fish": [
+    "カサゴ",
+    "マダイ",
+    "メダイ"
+   ]
+  },
+  {
+   "id": "00688",
+   "name": "天恵丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡湯河原町",
+   "port": "福浦港",
+   "rating": 4.3,
+   "reviews": 10,
+   "url": "https://www.chowari.jp/ship/00688/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イトヨリ",
+    "カサゴ",
+    "カワハギ",
+    "キンメダイ",
+    "マダイ",
+    "メバル",
+    "ユメカサゴ"
+   ]
+  },
+  {
+   "id": "00657",
+   "name": "恵一丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡湯河原町",
+   "port": "福浦港",
+   "rating": 4.7,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00657/",
+   "fish": [
+    "アカムツ",
+    "アマダイ",
+    "クロムツ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00655",
+   "name": "祥福丸",
+   "pref": "神奈川県",
+   "city": "足柄下郡湯河原町",
+   "port": "福浦港",
+   "rating": 4.7,
+   "reviews": 14,
+   "url": "https://www.chowari.jp/ship/00655/",
+   "fish": [
+    "アジ",
+    "メダイ"
+   ]
+  },
+  {
+   "id": "00270",
+   "name": "喜久丸",
+   "pref": "神奈川県",
+   "city": "鎌倉市",
+   "port": "腰越漁港",
+   "rating": 4.5,
+   "reviews": 245,
+   "url": "https://www.chowari.jp/ship/00270/",
+   "fish": [
+    "アマダイ",
+    "イトヨリ",
+    "イナダ",
+    "サバ",
+    "ハナダイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00153",
+   "name": "政美丸",
+   "pref": "神奈川県",
+   "city": "鎌倉市",
+   "port": "腰越漁港",
+   "rating": 4.5,
+   "reviews": 63,
+   "url": "https://www.chowari.jp/ship/00153/",
+   "fish": [
+    "アジ",
+    "タイ"
+   ]
+  },
+  {
+   "id": "00297",
+   "name": "池田丸",
+   "pref": "神奈川県",
+   "city": "鎌倉市",
+   "port": "腰越漁港",
+   "rating": 4.2,
+   "reviews": 358,
+   "url": "https://www.chowari.jp/ship/00297/",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "オニカサゴ",
+    "カワハギ",
+    "シロアマダイ",
+    "ハナダイ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01079",
+   "name": "ちがさき丸",
+   "pref": "神奈川県",
+   "city": "茅ヶ崎市",
+   "port": "茅ヶ崎港",
+   "rating": 4.4,
+   "reviews": 54,
+   "url": "https://www.chowari.jp/ship/01079/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "イナダ",
+    "カツオ",
+    "キハダマグロ",
+    "クロムツ",
+    "サバ",
+    "シロギス",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00318",
+   "name": "五エム丸",
+   "pref": "神奈川県",
+   "city": "三浦郡葉山町",
+   "port": "葉山芝崎港",
+   "rating": 4.3,
+   "reviews": 68,
+   "url": "https://www.chowari.jp/ship/00318/",
+   "fish": [
+    "アマダイ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00156",
+   "name": "福栄丸",
+   "pref": "神奈川県",
+   "city": "三浦郡葉山町",
+   "port": "葉山芝崎港",
+   "rating": 4.6,
+   "reviews": 16,
+   "url": "https://www.chowari.jp/ship/00156/",
+   "fish": [
+    "クロダイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00449",
+   "name": "たいぞう丸",
+   "pref": "神奈川県",
+   "city": "三浦郡葉山町",
+   "port": "葉山鐙摺港",
+   "rating": 4.8,
+   "reviews": 91,
+   "url": "https://www.chowari.jp/ship/00449/",
+   "fish": [
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00451",
+   "name": "愛正丸",
+   "pref": "神奈川県",
+   "city": "三浦郡葉山町",
+   "port": "葉山鐙摺港",
+   "rating": 4.6,
+   "reviews": 77,
+   "url": "https://www.chowari.jp/ship/00451/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "キンメダイ",
+    "クロムツ",
+    "マダイ",
+    "マルイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00450",
+   "name": "長三朗丸",
+   "pref": "神奈川県",
+   "city": "三浦郡葉山町",
+   "port": "葉山鐙摺港",
+   "rating": 4.3,
+   "reviews": 93,
+   "url": "https://www.chowari.jp/ship/00450/",
+   "fish": [
+    "スルメイカ",
+    "マルイカ",
+    "ムギイカ"
+   ]
+  },
+  {
+   "id": "00861",
+   "name": "政信丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "走水港",
+   "rating": 5.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00861/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "サバ",
+    "シロギス",
+    "タチウオ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00877",
+   "name": "治丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "走水港",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00877/",
+   "fish": [
+    "アジ",
+    "サバ"
+   ]
+  },
+  {
+   "id": "00839",
+   "name": "第八宏二郎丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "走水港",
+   "rating": 5.0,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00839/",
+   "fish": [
+    "アジ",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00931",
+   "name": "菱倉丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "走水港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00931/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "01580",
+   "name": "村本海事",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢八景乙舳",
+   "rating": 4.8,
+   "reviews": 106,
+   "url": "https://www.chowari.jp/ship/01580/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "アマダイ",
+    "カサゴ",
+    "クロダイ",
+    "シーバス",
+    "マダイ",
+    "マダコ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00007",
+   "name": "荒川屋",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢八景平潟",
+   "rating": 4.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00007/",
+   "fish": [
+    "アジ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00834",
+   "name": "野毛屋釣船店",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢八景平潟",
+   "rating": 4.5,
+   "reviews": 426,
+   "url": "https://www.chowari.jp/ship/00834/",
+   "fish": [
+    "アジ",
+    "ショウサイフグ",
+    "フグ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00150",
+   "name": "金沢八景 黒川丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢八景平潟",
+   "rating": 4.6,
+   "reviews": 145,
+   "url": "https://www.chowari.jp/ship/00150/",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "シロギス",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "00141",
+   "name": "久保弘丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 5.0,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00141/",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "シロギス",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00010",
+   "name": "仁丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.7,
+   "reviews": 193,
+   "url": "https://www.chowari.jp/ship/00010/",
+   "fish": [
+    "アジ",
+    "イシモチ"
+   ]
+  },
+  {
+   "id": "00862",
+   "name": "仁春丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.6,
+   "reviews": 10,
+   "url": "https://www.chowari.jp/ship/00862/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00012",
+   "name": "健一丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.7,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/00012/",
+   "fish": [
+    "アジ",
+    "シロギス",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00703",
+   "name": "忠彦丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.7,
+   "reviews": 108,
+   "url": "https://www.chowari.jp/ship/00703/",
+   "fish": [
+    "アジ",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00155",
+   "name": "番敏丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00155/",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "シロギス"
+   ]
+  },
+  {
+   "id": "00005",
+   "name": "蒲利丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.8,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/00005/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "シロギス",
+    "タチウオ"
+   ]
+  },
+  {
+   "id": "00689",
+   "name": "青田丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 3.0,
+   "reviews": 1,
+   "url": "https://www.chowari.jp/ship/00689/",
+   "fish": [
+    "マアジ"
+   ]
+  },
+  {
+   "id": "00008",
+   "name": "黒一丸",
+   "pref": "神奈川県",
+   "city": "横浜市",
+   "port": "金沢漁港",
+   "rating": 4.8,
+   "reviews": 13,
+   "url": "https://www.chowari.jp/ship/00008/",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "キス",
+    "サバ",
+    "タチウオ",
+    "マダイ",
+    "マダコ"
+   ]
+  },
+  {
+   "id": "01213",
+   "name": "岩伊丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "金田漁港",
+   "rating": 4.5,
+   "reviews": 8,
+   "url": "https://www.chowari.jp/ship/01213/",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "イサキ",
+    "カイワリ",
+    "クロムツ",
+    "サバ",
+    "タチウオ",
+    "ヒラメ",
+    "ブリ",
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01600",
+   "name": "邦丸 -金田漁港-",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "金田漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01600/",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "カサゴ",
+    "サバ",
+    "シロギス",
+    "ヒラメ",
+    "マアジ",
+    "マゴチ",
+    "マダイ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "01219",
+   "name": "金重丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "金田漁港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01219/",
+   "fish": [
+    "アオリイカ",
+    "アカムツ",
+    "アジ",
+    "アマダイ",
+    "イナダ",
+    "カサゴ",
+    "カワハギ",
+    "クロムツ",
+    "タチウオ",
+    "ハタ",
+    "ヒラメ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01466",
+   "name": "健海丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井新宿港",
+   "rating": 4.5,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/01466/",
+   "fish": [
+    "アマダイ",
+    "イトヨリ",
+    "イナダ",
+    "カツオ",
+    "カワハギ",
+    "キハダマグロ",
+    "シイラ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00872",
+   "name": "孝漁丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井新宿港",
+   "rating": 4.4,
+   "reviews": 8,
+   "url": "https://www.chowari.jp/ship/00872/",
+   "fish": [
+    "アオリイカ",
+    "アカハタ",
+    "アカムツ",
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "オニカサゴ",
+    "カサゴ",
+    "クロムツ",
+    "サバ",
+    "シロギス",
+    "スルメイカ",
+    "マダイ",
+    "マダコ",
+    "マルイカ",
+    "ムギイカ",
+    "ヤリイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01057",
+   "name": "辰丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井新宿港",
+   "rating": 4.8,
+   "reviews": 19,
+   "url": "https://www.chowari.jp/ship/01057/",
+   "fish": [
+    "アオリイカ",
+    "スルメイカ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "01467",
+   "name": "哲夫丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井港",
+   "rating": 4.8,
+   "reviews": 16,
+   "url": "https://www.chowari.jp/ship/01467/",
+   "fish": [
+    "アカハタ",
+    "アマダイ",
+    "オオモンハタ",
+    "カツオ",
+    "カワハギ",
+    "キハダマグロ",
+    "シイラ",
+    "マグロ"
+   ]
+  },
+  {
+   "id": "01470",
+   "name": "海力丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井港",
+   "rating": 5.0,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/01470/",
+   "fish": [
+    "アオリイカ",
+    "アカハタ",
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "オオモンハタ",
+    "カツオ",
+    "キハダマグロ",
+    "サワラ",
+    "シイラ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00926",
+   "name": "龍義丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00926/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "アマダイ",
+    "イトヨリ",
+    "イナダ",
+    "オニカサゴ",
+    "カツオ",
+    "キハダマグロ",
+    "キンメダイ",
+    "クロムツ",
+    "サバ",
+    "スルメイカ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00766",
+   "name": "かねい丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井漆山港",
+   "rating": 4.8,
+   "reviews": 4,
+   "url": "https://www.chowari.jp/ship/00766/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "オニカサゴ",
+    "カサゴ",
+    "カンコ",
+    "キンメダイ",
+    "クロムツ",
+    "スルメイカ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00454",
+   "name": "光三丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井漆山港",
+   "rating": 4.6,
+   "reviews": 34,
+   "url": "https://www.chowari.jp/ship/00454/",
+   "fish": [
+    "スルメイカ",
+    "ムギイカ"
+   ]
+  },
+  {
+   "id": "01060",
+   "name": "春盛丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井漆山港",
+   "rating": 4.5,
+   "reviews": 33,
+   "url": "https://www.chowari.jp/ship/01060/",
+   "fish": [
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "00798",
+   "name": "長助丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井漆山港",
+   "rating": 5.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/00798/",
+   "fish": [
+    "アオリイカ",
+    "アジ",
+    "カツオ",
+    "カンコ",
+    "キハダ",
+    "キハダマグロ",
+    "サワラ",
+    "シイラ",
+    "マダイ",
+    "マハタ"
+   ]
+  },
+  {
+   "id": "00795",
+   "name": "丸伊丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井荒崎漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00795/",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "オニカサゴ",
+    "カサゴ",
+    "カワハギ",
+    "ゴマサバ",
+    "マダイ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "00811",
+   "name": "道乗丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "長井荒崎漁港",
+   "rating": 4.7,
+   "reviews": 10,
+   "url": "https://www.chowari.jp/ship/00811/",
+   "fish": [
+    "アオリイカ",
+    "アカハタ",
+    "アジ",
+    "アマダイ",
+    "イナダ",
+    "オニカサゴ",
+    "カサゴ",
+    "シイラ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00797",
+   "name": "一郎丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.6,
+   "reviews": 18,
+   "url": "https://www.chowari.jp/ship/00797/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イナダ",
+    "サバ",
+    "スルメイカ",
+    "タチウオ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00927",
+   "name": "丸又丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 5.0,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00927/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "オニカサゴ",
+    "キンメダイ",
+    "クロムツ",
+    "サバ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00921",
+   "name": "儀平丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 3.7,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/00921/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イシダイ",
+    "オニカサゴ",
+    "カサゴ",
+    "カワハギ",
+    "キンメダイ",
+    "クロムツ",
+    "サバ",
+    "スルメイカ",
+    "ベニアコウ",
+    "マダイ",
+    "マルイカ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00929",
+   "name": "勇丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.4,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00929/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "クロムツ",
+    "サバ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01038",
+   "name": "又信丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.0,
+   "reviews": 3,
+   "url": "https://www.chowari.jp/ship/01038/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "オニカサゴ",
+    "クロムツ",
+    "サバ",
+    "シロムツ",
+    "マダイ",
+    "マルイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01173",
+   "name": "喜市丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01173/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "カサゴ",
+    "サバ",
+    "タチウオ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00916",
+   "name": "孫武丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.5,
+   "reviews": 14,
+   "url": "https://www.chowari.jp/ship/00916/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "カサゴ",
+    "カワハギ",
+    "キンメダイ",
+    "クロムツ",
+    "ゴマサバ",
+    "タチウオ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "01168",
+   "name": "松雄丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.0,
+   "reviews": 2,
+   "url": "https://www.chowari.jp/ship/01168/",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イカ",
+    "イサキ",
+    "イナダ",
+    "オニカサゴ",
+    "カサゴ",
+    "カワハギ",
+    "クロムツ",
+    "サバ",
+    "タチウオ",
+    "チカメキントキ",
+    "マダイ",
+    "マルイカ"
+   ]
+  },
+  {
+   "id": "01282",
+   "name": "第八日の出丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 5.0,
+   "reviews": 6,
+   "url": "https://www.chowari.jp/ship/01282/",
+   "fish": [
+    "アジ",
+    "アブラボウズ",
+    "アマダイ",
+    "オニカサゴ",
+    "カツオ",
+    "キハダマグロ",
+    "キンメダイ",
+    "クロダイ",
+    "クロムツ",
+    "サバ",
+    "シロアマダイ",
+    "スルメイカ",
+    "ベニアコウ",
+    "マダイ",
+    "ヤリイカ"
+   ]
+  },
+  {
+   "id": "00868",
+   "name": "義一丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 4.4,
+   "reviews": 5,
+   "url": "https://www.chowari.jp/ship/00868/",
+   "fish": [
+    "アカアマダイ",
+    "アジ",
+    "イサキ",
+    "ゴマサバ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00919",
+   "name": "鈴茂丸",
+   "pref": "神奈川県",
+   "city": "三浦市",
+   "port": "間口漁港",
+   "rating": 5.0,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00919/",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "スルメイカ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00690",
+   "name": "房丸",
+   "pref": "神奈川県",
+   "city": "横須賀市",
+   "port": "鴨居大室漁港",
+   "rating": 4.7,
+   "reviews": 72,
+   "url": "https://www.chowari.jp/ship/00690/",
+   "fish": [
+    "アジ",
+    "マダイ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00181",
+   "name": "宮田丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "久慈漁港",
+   "rating": 4.8,
+   "reviews": 16,
+   "url": "https://www.chowari.jp/ship/00181/",
+   "fish": [
+    "ショウサイフグ",
+    "ヒラメ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00260",
+   "name": "弘漁丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "久慈漁港",
+   "rating": 4.6,
+   "reviews": 67,
+   "url": "https://www.chowari.jp/ship/00260/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00172",
+   "name": "第十五大勝丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "久慈漁港",
+   "rating": 4.7,
+   "reviews": 7,
+   "url": "https://www.chowari.jp/ship/00172/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01091",
+   "name": "ことぶき丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "会瀬漁港",
+   "rating": 4.7,
+   "reviews": 22,
+   "url": "https://www.chowari.jp/ship/01091/",
+   "fish": [
+    "アマダイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01122",
+   "name": "弁天丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "会瀬漁港",
+   "rating": 4.4,
+   "reviews": 18,
+   "url": "https://www.chowari.jp/ship/01122/",
+   "fish": [
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01202",
+   "name": "第二海神丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "会瀬漁港",
+   "rating": 4.6,
+   "reviews": 12,
+   "url": "https://www.chowari.jp/ship/01202/",
+   "fish": [
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "01583",
+   "name": "BLUE DRAGON",
+   "pref": "茨城県",
+   "city": "東茨城郡大洗町",
+   "port": "大洗港",
+   "rating": 4.8,
+   "reviews": 9,
+   "url": "https://www.chowari.jp/ship/01583/",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "イワシ",
+    "ハナダイ",
+    "マダイ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00740",
+   "name": "健清丸",
+   "pref": "茨城県",
+   "city": "東茨城郡大洗町",
+   "port": "大洗港",
+   "rating": 4.5,
+   "reviews": 14,
+   "url": "https://www.chowari.jp/ship/00740/",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "コチ",
+    "シイラ",
+    "シロギス",
+    "チカメキントキ",
+    "ブリ",
+    "マグロ",
+    "マダイ",
+    "メバル",
+    "ヤリイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00737",
+   "name": "日立丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "日立港第五埠頭",
+   "rating": 4.0,
+   "reviews": 13,
+   "url": "https://www.chowari.jp/ship/00737/",
+   "fish": [
+    "スルメイカ"
+   ]
+  },
+  {
+   "id": "01430",
+   "name": "見崎丸",
+   "pref": "茨城県",
+   "city": "日立市",
+   "port": "河原子港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/01430/",
+   "fish": [
+    "ハナダイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "01375",
+   "name": "丸天丸",
+   "pref": "茨城県",
+   "city": "神栖市",
+   "port": "波崎新港",
+   "rating": 4.4,
+   "reviews": 38,
+   "url": "https://www.chowari.jp/ship/01375/",
+   "fish": [
+    "アマダイ",
+    "アラ",
+    "オキメバル",
+    "カサゴ",
+    "メヌケ"
+   ]
+  },
+  {
+   "id": "00972",
+   "name": "第二つれたか丸",
+   "pref": "茨城県",
+   "city": "ひたちなか市",
+   "port": "那珂湊港",
+   "rating": 4.2,
+   "reviews": 20,
+   "url": "https://www.chowari.jp/ship/00972/",
+   "fish": [
+    "アジ",
+    "タイ",
+    "マダイ",
+    "マダコ",
+    "メバル",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00962",
+   "name": "久保丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://www.chowari.jp/ship/00962/",
+   "fish": [
+    "イナダ",
+    "ヒラメ",
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00951",
+   "name": "宗和丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋新港",
+   "rating": 4.7,
+   "reviews": 252,
+   "url": "https://www.chowari.jp/ship/00951/",
+   "fish": [
+    "アカムツ",
+    "ショウサイフグ",
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00166",
+   "name": "不動丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.5,
+   "reviews": 553,
+   "url": "https://www.chowari.jp/ship/00166/",
+   "fish": [
+    "ショウサイフグ",
+    "スルメイカ",
+    "ハナダイ",
+    "ヒラマサ",
+    "マゴチ",
+    "マダイ",
+    "マルイカ",
+    "ワラサ"
+   ]
+  },
+  {
+   "id": "00955",
+   "name": "利喜丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.6,
+   "reviews": 29,
+   "url": "https://www.chowari.jp/ship/00955/",
+   "fish": [
+    "アイナメ",
+    "ショウサイフグ",
+    "ソイ",
+    "マダイ",
+    "メバル"
+   ]
+  },
+  {
+   "id": "00960",
+   "name": "大久丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.6,
+   "reviews": 8,
+   "url": "https://www.chowari.jp/ship/00960/",
+   "fish": [
+    "アジ"
+   ]
+  },
+  {
+   "id": "00169",
+   "name": "大春丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.2,
+   "reviews": 18,
+   "url": "https://www.chowari.jp/ship/00169/",
+   "fish": [
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00164",
+   "name": "幸栄丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.3,
+   "reviews": 328,
+   "url": "https://www.chowari.jp/ship/00164/",
+   "fish": [
+    "ショウサイフグ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00964",
+   "name": "植田丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.6,
+   "reviews": 45,
+   "url": "https://www.chowari.jp/ship/00964/",
+   "fish": [
+    "ハナダイ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00348",
+   "name": "清栄丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.5,
+   "reviews": 68,
+   "url": "https://www.chowari.jp/ship/00348/",
+   "fish": [
+    "マゴチ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00529",
+   "name": "豊丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.2,
+   "reviews": 143,
+   "url": "https://www.chowari.jp/ship/00529/",
+   "fish": [
+    "ショウサイフグ",
+    "マダイ"
+   ]
+  },
+  {
+   "id": "00167",
+   "name": "長岡丸",
+   "pref": "茨城県",
+   "city": "鹿嶋市",
+   "port": "鹿嶋旧港",
+   "rating": 4.7,
+   "reviews": 26,
+   "url": "https://www.chowari.jp/ship/00167/",
+   "fish": [
+    "ショウサイフグ",
+    "マゴチ"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+# 関東 釣船ファインダー 🎣
+
+魚種を選ぶだけで、**今の季節に関東のどの漁港・どの釣船（船宿）から出船しているか**を確認できるスマホWebアプリ。
+釣り船予約サイト [釣割（chowari.jp）](https://www.chowari.jp/search/?area=92) の関東エリアデータをベースに構築。
+
+## 使い方（ローカル確認）
+
+```
+python -m http.server 8770 --directory docs
+```
+→ ブラウザで http://localhost:8770/ を開く（launch.json 登録名: `funayado-finder`）。
+
+## 仕組み
+
+- **データ源**: 釣割 `search/?area=92`（関東）を全ページ巡回してスナップショット化。
+  各釣船の 船名 / 県・市 / 漁港 / 評価・レビュー数 / 予約URL / 対象魚（プラン記載）を収集。
+- **釣期判定**: 「今出船しているか」は関東の一般的な**釣期カレンダー**（手動キュレーション）で判定。
+  釣割データは *魚種 ⇄ 漁港 ⇄ 船宿* の紐付けに使用する。
+- **絞り込みはクライアント側**: 魚種を選ぶ → その魚を狙える船を漁港ごとに集約表示。
+  現在月が釣期内なら「今が旬」バッジ、オフ期なら薄表示＋警告。県フィルタ・魚種検索付き。
+
+## ファイル構成
+
+```
+funayado-finder/
+├─ docs/                      ← GitHub Pages 公開用（そのまま /docs 配信可）
+│  ├─ index.html             ← アプリ本体（自己完結・依存なし）
+│  └─ data/
+│     ├─ boats.json          ← 釣割スナップショット（tools/fetch_chowari.py が生成）
+│     └─ seasons.json        ← 釣期カレンダー（手動キュレーション・48種）
+├─ tools/
+│  └─ fetch_chowari.py       ← スクレイパ（スナップショット更新用）
+└─ .claude/launch.json
+```
+
+## データ更新（スナップショット再取得）
+
+```
+python tools/fetch_chowari.py
+```
+→ `docs/data/boats.json` を最新化。取得日は `generated` に記録。1req/秒でアクセス。
+
+## メモ（技術）
+
+- 釣船カードのコンテナは `<section class="search__shiplist_unit">`（div ではない）。
+- 対象魚はプラン内 `..._info_sup_fishlist_item` の `<li>`。`ハナダイ（チダイ）` 等は括弧以降を落として集約。
+- `area=92`=関東、`fish=NN`=魚種ID。robots.txt は一般クローラを禁止していない（特定ボットのみ Disallow）。
+- 魚種の同義（アジ/マアジ、キス/シロギス、タイ/マダイ 等）は `seasons.json` の `aliases` で canonical へ集約。
+
+## 免責
+
+釣期は目安。実際の出船可否・空き状況・料金は各釣船の予約ページ（釣割）でご確認ください。

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b3d5c">
+<title>関東 釣船ファインダー｜魚種で探す出船情報</title>
+<style>
+  :root{
+    --bg:#0b1f2a; --panel:#0f2c3d; --panel2:#123646; --line:#1d4d63;
+    --ink:#eaf4f8; --sub:#9fc3d4; --accent:#22c1a6; --accent2:#37a0d6;
+    --hot:#ff8a3d; --off:#6b8494; --chip:#153b4d; --star:#ffce54;
+    --shadow:0 4px 18px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:linear-gradient(180deg,#0b1f2a,#0a2531 40%,#08303f);
+    color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",Meiryo,sans-serif;
+    -webkit-text-size-adjust:100%; line-height:1.5; min-height:100vh;
+  }
+  header{
+    position:sticky; top:0; z-index:20;
+    background:linear-gradient(180deg,#0b3d5c,#0b2f45);
+    padding:12px 14px 10px; box-shadow:var(--shadow);
+    border-bottom:1px solid var(--line);
+  }
+  header h1{margin:0; font-size:19px; letter-spacing:.5px; display:flex; align-items:center; gap:8px}
+  header .sub{margin:2px 0 0; font-size:12px; color:var(--sub)}
+  header .season{
+    display:inline-block; margin-top:7px; font-size:12px; font-weight:700;
+    background:rgba(255,138,61,.16); color:#ffd0a8; border:1px solid rgba(255,138,61,.4);
+    padding:3px 10px; border-radius:999px;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:12px 12px 60px}
+  .controls{display:flex; flex-direction:column; gap:9px; margin-bottom:12px}
+  .searchbox{
+    display:flex; align-items:center; gap:8px; background:var(--panel);
+    border:1px solid var(--line); border-radius:12px; padding:9px 12px;
+  }
+  .searchbox input{
+    flex:1; background:transparent; border:0; color:var(--ink); font-size:15px; outline:none;
+  }
+  .searchbox input::placeholder{color:#6f93a4}
+  .row{display:flex; flex-wrap:wrap; gap:7px; align-items:center}
+  .toggle{
+    display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--sub);
+    background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:6px 12px; cursor:pointer; user-select:none;
+  }
+  .toggle.on{background:rgba(34,193,166,.16); border-color:var(--accent); color:#bff3e8}
+  .toggle .dot{width:9px;height:9px;border-radius:50%;background:#456;transition:.15s}
+  .toggle.on .dot{background:var(--accent)}
+  .pref{
+    font-size:12.5px; color:var(--sub); background:var(--chip); border:1px solid var(--line);
+    border-radius:999px; padding:5px 11px; cursor:pointer;
+  }
+  .pref.on{background:rgba(55,160,214,.22); border-color:var(--accent2); color:#cfeaf9}
+  .label{font-size:11px; color:#7fa6b8; margin:2px 2px -2px; letter-spacing:.4px}
+
+  /* species grid */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:8px}
+  .fish{
+    background:var(--panel); border:1px solid var(--line); border-radius:13px;
+    padding:10px 8px 9px; text-align:center; cursor:pointer; position:relative;
+    transition:transform .08s, border-color .12s, background .12s;
+  }
+  .fish:active{transform:scale(.96)}
+  .fish.hot{border-color:rgba(255,138,61,.55); background:linear-gradient(180deg,#123646,#14313a)}
+  .fish.dim{opacity:.42}
+  .fish .em{font-size:24px; line-height:1}
+  .fish .nm{font-size:13px; font-weight:700; margin-top:4px; word-break:break-all}
+  .fish .mi{font-size:10.5px; color:var(--sub); margin-top:3px}
+  .fish .cnt{font-size:10.5px; color:#7fbfe0; margin-top:2px}
+  .fish .badge{
+    position:absolute; top:6px; right:6px; font-size:9.5px; font-weight:800;
+    background:var(--hot); color:#3a1600; border-radius:6px; padding:1px 5px;
+  }
+  .empty{color:var(--sub); text-align:center; padding:30px 10px; font-size:14px}
+
+  /* detail */
+  .detail{margin-top:4px}
+  .back{display:inline-flex; align-items:center; gap:6px; color:var(--accent2); font-size:14px; background:none; border:0; cursor:pointer; padding:6px 2px}
+  .dhead{
+    background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line);
+    border-radius:15px; padding:14px 14px 12px; margin-top:6px; box-shadow:var(--shadow);
+  }
+  .dhead .t{display:flex; align-items:center; gap:10px}
+  .dhead .em{font-size:32px}
+  .dhead h2{margin:0; font-size:20px}
+  .dhead .st{font-size:12.5px; margin-top:2px}
+  .st.now{color:#8ef0da} .st.offp{color:#ffb98a}
+  .dhead .note{font-size:12.5px; color:var(--sub); margin-top:8px}
+  .cal{display:flex; gap:3px; margin-top:11px}
+  .cal .m{
+    flex:1; text-align:center; font-size:10px; color:#6f93a4; padding:5px 0 4px;
+    background:#0c2836; border-radius:6px; border:1px solid transparent;
+  }
+  .cal .m.in{background:rgba(34,193,166,.22); color:#bff3e8}
+  .cal .m.peak{background:var(--accent); color:#04231d; font-weight:800}
+  .cal .m.cur{border-color:#ffd0a8; box-shadow:0 0 0 1px #ffd0a8 inset}
+  .summary{font-size:12.5px; color:var(--sub); margin:14px 2px 8px}
+  .summary b{color:var(--ink)}
+
+  .port{
+    background:var(--panel); border:1px solid var(--line); border-radius:13px;
+    margin-bottom:10px; overflow:hidden;
+  }
+  .port .ph{
+    display:flex; align-items:baseline; gap:8px; padding:10px 13px 8px;
+    background:linear-gradient(180deg,#123a4c,#0f2c3d); border-bottom:1px solid var(--line);
+  }
+  .port .ph .pn{font-size:15px; font-weight:800}
+  .port .ph .pp{font-size:11.5px; color:var(--sub)}
+  .port .ph .pc{margin-left:auto; font-size:11.5px; color:#7fbfe0}
+  .boat{padding:10px 13px; border-top:1px solid #10303f}
+  .boat:first-of-type{border-top:0}
+  .boat .bt{display:flex; align-items:center; gap:8px}
+  .boat .bn{font-size:15px; font-weight:700}
+  .boat .rt{font-size:12px; color:var(--star); white-space:nowrap}
+  .boat .rt .rv{color:#7fa6b8; margin-left:2px}
+  .boat .go{
+    margin-left:auto; font-size:12.5px; font-weight:700; text-decoration:none;
+    background:var(--accent); color:#04231d; padding:5px 12px; border-radius:9px; white-space:nowrap;
+  }
+  .boat .go:active{opacity:.8}
+  .boat .fishtags{display:flex; flex-wrap:wrap; gap:4px; margin-top:7px}
+  .boat .ft{font-size:10.5px; color:var(--sub); background:var(--chip); border:1px solid var(--line); border-radius:6px; padding:1px 7px}
+  .boat .ft.hit{background:rgba(34,193,166,.2); border-color:var(--accent); color:#bff3e8; font-weight:700}
+  footer{color:#5f8194; font-size:11px; text-align:center; padding:22px 14px 34px; line-height:1.7}
+  footer a{color:#6fb3d6}
+  .toast{position:fixed; left:50%; bottom:20px; transform:translateX(-50%); background:#123646; border:1px solid var(--line); color:var(--ink); font-size:12.5px; padding:8px 14px; border-radius:10px; box-shadow:var(--shadow); opacity:0; transition:.25s; pointer-events:none}
+  .toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎣 関東 釣船ファインダー</h1>
+  <p class="sub">魚種を選ぶだけ ─ 今どの漁港・どの釣船から出船しているか</p>
+  <span class="season" id="seasonTag">季節を判定中…</span>
+</header>
+
+<div class="wrap">
+  <!-- 一覧ビュー -->
+  <div id="listView">
+    <div class="controls">
+      <div class="searchbox">
+        <span>🔍</span>
+        <input id="q" type="search" placeholder="魚種を検索（例：マダイ、タチウオ、イカ）" autocomplete="off">
+      </div>
+      <div class="row">
+        <div class="toggle on" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
+      </div>
+      <div class="label">エリア（県）</div>
+      <div class="row" id="prefRow"></div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" style="display:none"></div>
+  </div>
+
+  <!-- 詳細ビュー -->
+  <div id="detailView" class="detail" style="display:none">
+    <button class="back" id="back">‹ 魚種一覧へ戻る</button>
+    <div id="detailBody"></div>
+  </div>
+</div>
+
+<footer>
+  データ出典：<a href="https://www.chowari.jp/search/?area=92" target="_blank" rel="noopener">釣割（chowari.jp）関東エリア</a> のスナップショット<br>
+  釣期は関東の一般的な目安（手動キュレーション）。実際の出船可否・空き状況は各釣船の予約ページでご確認ください。
+  <span id="genDate"></span>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const PREFS = ["茨城県","千葉県","東京都","神奈川県","静岡県"];
+const MONTHS_LABEL = ["1","2","3","4","5","6","7","8","9","10","11","12"];
+let DATA=null, SEASON=null, alias2sp=null;
+const state = { q:"", seasonOnly:true, prefs:new Set(), selected:null };
+const now = new Date();
+const curMonth = now.getMonth()+1;
+
+function jpSeasonName(m){
+  return ({1:"真冬",2:"晩冬",3:"早春",4:"春",5:"晩春",6:"初夏",7:"盛夏",8:"盛夏",9:"初秋",10:"秋",11:"晩秋",12:"初冬"})[m];
+}
+function toast(msg){
+  const t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('show'),1600);
+}
+function monthRangeText(months){
+  if(!months||!months.length) return "通年";
+  if(months.length>=12) return "通年";
+  // 連続区間を月順（釣期の始まり基準）でまとめる
+  const set=new Set(months);
+  // 探索開始：釣期に入っていない月の直後を始点にする
+  let start=1; for(let i=1;i<=12;i++){ if(!set.has(i) && set.has((i%12)+1)){ start=(i%12)+1; break; } }
+  const ordered=[]; for(let k=0;k<12;k++){ const m=((start-1+k)%12)+1; if(set.has(m)) ordered.push(m); }
+  return ordered[0]+"月〜"+ordered[ordered.length-1]+"月";
+}
+function inSeason(sp){ return sp.months && sp.months.includes(curMonth); }
+
+// 種→対象船（生魚種名の交差で判定）
+function shipsForSpecies(sp){
+  const al=new Set(sp.aliases);
+  return DATA.ships.filter(s => s.fish.some(f=>al.has(f)));
+}
+
+function buildIndexes(){
+  alias2sp={};
+  SEASON.species.forEach(sp=>{
+    sp._ships = shipsForSpecies(sp);
+    sp._ports = new Set(sp._ships.map(s=>s.port).filter(Boolean));
+    sp.aliases.forEach(a=>alias2sp[a]=sp);
+  });
+}
+
+function speciesShipsFiltered(sp){
+  let ships=sp._ships;
+  if(state.prefs.size) ships=ships.filter(s=>state.prefs.has(s.pref));
+  return ships;
+}
+
+function renderPrefRow(){
+  const row=document.getElementById('prefRow'); row.innerHTML="";
+  PREFS.forEach(p=>{
+    // データに存在する県のみ表示
+    if(!DATA.ships.some(s=>s.pref===p)) return;
+    const el=document.createElement('div');
+    el.className="pref"+(state.prefs.has(p)?" on":"");
+    el.textContent=p.replace(/[都府県]$/,"");
+    el.onclick=()=>{ state.prefs.has(p)?state.prefs.delete(p):state.prefs.add(p); renderPrefRow(); renderGrid(); };
+    row.appendChild(el);
+  });
+}
+
+function renderGrid(){
+  const grid=document.getElementById('grid'); const empty=document.getElementById('empty');
+  const q=state.q.trim();
+  let list=SEASON.species.slice();
+
+  // 検索
+  if(q) list=list.filter(sp=> sp.name.includes(q) || sp.aliases.some(a=>a.includes(q)) );
+  // 県フィルタ（その県で出船する船がある種のみ）
+  if(state.prefs.size) list=list.filter(sp=> speciesShipsFiltered(sp).length>0 );
+  // 釣期のみ
+  if(state.seasonOnly) list=list.filter(inSeason);
+
+  // 並び：釣期 > 船数
+  list.sort((a,b)=>{
+    const ai=inSeason(a)?1:0, bi=inSeason(b)?1:0;
+    if(ai!==bi) return bi-ai;
+    return speciesShipsFiltered(b).length - speciesShipsFiltered(a).length;
+  });
+
+  grid.innerHTML="";
+  if(!list.length){
+    empty.style.display="block";
+    empty.textContent = state.seasonOnly ? "この条件で今が釣期の魚が見つかりません。「今が釣期の魚のみ」をオフにするか、検索語・エリアを見直してください。" : "該当する魚種がありません。";
+    return;
+  }
+  empty.style.display="none";
+  list.forEach(sp=>{
+    const nShips=speciesShipsFiltered(sp).length;
+    const nPorts=new Set(speciesShipsFiltered(sp).map(s=>s.port).filter(Boolean)).size;
+    const hot=inSeason(sp);
+    const el=document.createElement('div');
+    el.className="fish"+(hot?" hot":"")+((!hot&&!state.seasonOnly)?" dim":"");
+    el.innerHTML =
+      (hot?'<span class="badge">今が旬</span>':'')+
+      '<div class="em">'+(sp.emoji||"🐟")+'</div>'+
+      '<div class="nm">'+sp.name+'</div>'+
+      '<div class="mi">'+monthRangeText(sp.months)+'</div>'+
+      '<div class="cnt">'+ (nShips? nShips+'船・'+nPorts+'港' : '該当なし') +'</div>';
+    el.onclick=()=>{ if(!nShips){toast(sp.name+'は現在この条件で出船データがありません');return;} openDetail(sp); };
+    grid.appendChild(el);
+  });
+}
+
+function starStr(r){
+  if(r==null) return "☆ 新着";
+  const full=Math.round(r);
+  return "★".repeat(full)+"☆".repeat(5-full)+" "+r.toFixed(1);
+}
+
+function openDetail(sp){
+  state.selected=sp;
+  document.getElementById('listView').style.display="none";
+  const dv=document.getElementById('detailView'); dv.style.display="block";
+  window.scrollTo(0,0);
+
+  const ships=speciesShipsFiltered(sp);
+  // 港ごとに集約
+  const portMap=new Map();
+  ships.forEach(s=>{
+    const key=s.port||"（港名不明）";
+    if(!portMap.has(key)) portMap.set(key,{port:key,pref:s.pref,city:s.city,ships:[]});
+    portMap.get(key).ships.push(s);
+  });
+  const ports=[...portMap.values()];
+  // 港内は評価順、港は所属船数→最高評価
+  ports.forEach(p=>p.ships.sort((a,b)=>(b.rating||0)-(a.rating||0) || b.reviews-a.reviews));
+  ports.sort((a,b)=> b.ships.length-a.ships.length || (b.ships[0].rating||0)-(a.ships[0].rating||0));
+
+  const hot=inSeason(sp);
+  const al=new Set(sp.aliases);
+
+  // カレンダー
+  let cal="";
+  for(let m=1;m<=12;m++){
+    const isIn=sp.months.includes(m), isPeak=(sp.peak||[]).includes(m), isCur=(m===curMonth);
+    cal+='<div class="m'+(isPeak?' peak':(isIn?' in':''))+(isCur?' cur':'')+'">'+MONTHS_LABEL[m-1]+'</div>';
+  }
+
+  const prefNote = state.prefs.size ? '（'+[...state.prefs].map(p=>p.replace(/[都府県]$/,"")).join('・')+'に絞込中）' : '';
+
+  let html='';
+  html+='<div class="dhead">'+
+    '<div class="t"><div class="em">'+(sp.emoji||"🐟")+'</div><div>'+
+      '<h2>'+sp.name+'</h2>'+
+      '<div class="st '+(hot?'now':'offp')+'">'+
+        (hot? '● 今が釣期です（'+jpSeasonName(curMonth)+'・'+curMonth+'月）' : '○ 現在はオフ期（釣期：'+monthRangeText(sp.months)+'）')+
+      '</div>'+
+    '</div></div>'+
+    '<div class="cal">'+cal+'</div>'+
+    (sp.note?'<div class="note">'+sp.note+'</div>':'')+
+  '</div>';
+
+  html+='<div class="summary"><b>'+ships.length+'</b> 隻の釣船 / <b>'+ports.length+'</b> の漁港から出船'+prefNote+
+        '（釣割掲載・'+sp.name+'を狙えるプランあり）</div>';
+
+  ports.forEach(p=>{
+    html+='<div class="port"><div class="ph">'+
+      '<span class="pn">⚓ '+p.port+'</span>'+
+      '<span class="pp">'+(p.pref||"")+(p.city?" "+p.city:"")+'</span>'+
+      '<span class="pc">'+p.ships.length+'船</span></div>';
+    p.ships.forEach(s=>{
+      const others=s.fish.filter(f=>!al.has(f));
+      const hitTags=s.fish.filter(f=>al.has(f)).map(f=>'<span class="ft hit">'+f+'</span>').join('');
+      const otherTags=others.slice(0,8).map(f=>'<span class="ft">'+f+'</span>').join('')+(others.length>8?'<span class="ft">＋'+(others.length-8)+'</span>':'');
+      html+='<div class="boat"><div class="bt">'+
+        '<span class="bn">'+s.name+'</span>'+
+        '<span class="rt">'+starStr(s.rating)+(s.reviews?'<span class="rv">('+s.reviews+')</span>':'')+'</span>'+
+        '<a class="go" href="'+s.url+'" target="_blank" rel="noopener">予約 ›</a>'+
+      '</div>'+
+      '<div class="fishtags">'+hitTags+otherTags+'</div>'+
+      '</div>';
+    });
+    html+='</div>';
+  });
+
+  document.getElementById('detailBody').innerHTML=html;
+}
+
+function closeDetail(){
+  document.getElementById('detailView').style.display="none";
+  document.getElementById('listView').style.display="block";
+  state.selected=null;
+}
+
+function initControls(){
+  document.getElementById('q').addEventListener('input',e=>{ state.q=e.target.value; renderGrid(); });
+  const tg=document.getElementById('tgSeason');
+  tg.onclick=()=>{ state.seasonOnly=!state.seasonOnly; tg.classList.toggle('on',state.seasonOnly); renderGrid(); };
+  document.getElementById('back').onclick=closeDetail;
+  document.getElementById('seasonTag').textContent =
+    '今：'+ (now.getMonth()+1) + '月' + (now.getDate()<=10?'上旬':now.getDate()<=20?'中旬':'下旬') + '（'+jpSeasonName(curMonth)+'）の狙い目';
+}
+
+Promise.all([
+  fetch('data/boats.json').then(r=>r.json()),
+  fetch('data/seasons.json').then(r=>r.json())
+]).then(([boats,seasons])=>{
+  DATA=boats; SEASON=seasons;
+  buildIndexes();
+  initControls();
+  renderPrefRow();
+  renderGrid();
+  document.getElementById('genDate').textContent =
+    boats.generated ? '｜取得日 '+boats.generated+'（'+boats.ship_count+'隻/'+boats.port_count+'港）' : '';
+}).catch(err=>{
+  document.getElementById('grid').innerHTML='<div class="empty">データの読み込みに失敗しました：'+err+'</div>';
+});
+</script>
+</body>
+</html>
