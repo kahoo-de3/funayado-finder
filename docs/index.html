@@ -163,7 +163,7 @@
 </div>
 
 <footer>
-  データ出典：<a href="https://www.chowari.jp/search/?area=92" target="_blank" rel="noopener">釣割（chowari.jp）関東エリア</a> のスナップショット<br>
+  データ出典：<a href="https://www.chowari.jp/search/?area=92" target="_blank" rel="noopener">釣割（chowari.jp）関東エリア</a> ＋ <a href="https://reserve.castingnet.jp/" target="_blank" rel="noopener">キャスティング船釣り予約</a> のスナップショット<br>
   釣期は関東の一般的な目安（手動キュレーション）。実際の出船可否・空き状況は各釣船の予約ページでご確認ください。
   <span id="genDate"></span>
 </footer>
@@ -171,7 +171,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const PREFS = ["茨城県","千葉県","東京都","神奈川県","静岡県"];
+const PREFS = ["茨城県","千葉県","埼玉県","東京都","神奈川県","静岡県"];
 const MONTHS_LABEL = ["1","2","3","4","5","6","7","8","9","10","11","12"];
 let DATA=null, SEASON=null, alias2sp=null;
 const state = { q:"", seasonOnly:true, prefs:new Set(), selected:null };
@@ -273,7 +273,7 @@ function renderGrid(){
 }
 
 function starStr(r){
-  if(r==null) return "☆ 新着";
+  if(r==null) return "☆ 評価なし";
   const full=Math.round(r);
   return "★".repeat(full)+"☆".repeat(5-full)+" "+r.toFixed(1);
 }
@@ -322,7 +322,7 @@ function openDetail(sp){
   '</div>';
 
   html+='<div class="summary"><b>'+ships.length+'</b> 隻の釣船 / <b>'+ports.length+'</b> の漁港から出船'+prefNote+
-        '（釣割掲載・'+sp.name+'を狙えるプランあり）</div>';
+        '（'+sp.name+'の実績・プランあり）</div>';
 
   ports.forEach(p=>{
     html+='<div class="port"><div class="ph">'+

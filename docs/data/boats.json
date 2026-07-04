@@ -1,41 +1,67 @@
 {
- "source": "chowari.jp (area=92 関東)",
+ "source": "chowari.jp (area=92 関東) + reserve.castingnet.jp",
  "generated": "2026-07-04",
  "area": 92,
- "ship_count": 257,
- "port_count": 110,
- "fish_count": 85,
+ "ship_count": 402,
+ "port_count": 155,
+ "fish_count": 161,
  "fish_names": [
   "アイナメ",
+  "アオアジ",
+  "アオハタ",
+  "アオリ",
   "アオリイカ",
   "アカアマダイ",
+  "アカイサキ",
   "アカハタ",
+  "アカボラ",
   "アカムツ",
+  "アカヤガラ",
   "アコウダイ",
   "アジ",
   "アナゴ",
   "アブラボウズ",
   "アマダイ",
+  "アヤメ",
+  "アヤメカサゴ",
   "アラ",
   "イカ",
   "イサキ",
   "イサギ",
   "イシダイ",
+  "イシナギ",
   "イシモチ",
   "イトヨリ",
   "イナダ",
+  "イネゴチ",
+  "イヤゴハタ",
+  "イラ",
   "イワシ",
+  "ウスメバル",
+  "ウマ",
+  "ウマズラハギ",
   "ウマヅラ",
+  "ウメイロ",
+  "ウルメ",
+  "オアカムロ",
+  "オオクチハマダイ",
   "オオモンハタ",
+  "オキカサゴ",
   "オキメバル",
+  "オジサン",
+  "オナガ",
+  "オナガダイ",
   "オニカサゴ",
   "カイワリ",
   "カサゴ",
   "カツオ",
+  "カナガシラ",
   "カマス",
   "カワハギ",
   "カンコ",
   "カンパチ",
+  "ガンゾウ",
+  "ガンゾウビラメ",
   "キス",
   "キダイ",
   "キハダ",
@@ -45,51 +71,101 @@
   "キントキ",
   "キンメ",
   "キンメダイ",
+  "クロシビカマス",
   "クロダイ",
   "クロムツ",
   "クロメバル",
+  "グルクン",
+  "コアジ",
+  "コウイカ",
+  "コダイ",
   "コチ",
+  "コノシロ",
+  "コモンフグ",
   "ゴマサバ",
   "サゴシ",
   "サバ",
   "サワラ",
+  "サンノジ",
+  "サンパク",
   "シイラ",
+  "シキシマハナダイ",
   "シマアジ",
+  "ショウサイフク",
   "ショウサイフグ",
   "シロアマダイ",
   "シロギス",
   "シロムツ",
   "シーバス",
+  "スジイカ",
+  "スズキ",
+  "スマ",
+  "スマガツオ",
+  "スミイカ",
+  "スミヤキ",
+  "スルメ",
   "スルメイカ",
+  "セイゴ",
   "ソイ",
+  "ソウダカツオ",
+  "ソウダガツオ",
+  "ソーダガツオ",
   "タイ",
   "タコ",
   "タチウオ",
+  "タマガシラ",
   "チカメキントキ",
   "チヌ",
+  "ツムブリ",
   "トラフグ",
+  "ニベ",
+  "ノドグロカサゴ",
+  "ハガツオ",
+  "ハシキンメ",
+  "ハゼ",
   "ハタ",
+  "ハチカサゴ",
+  "ハチビキ",
   "ハナダイ",
+  "ハマチ",
+  "ヒガンフグ",
+  "ヒメコダイ",
+  "ヒメダイ",
   "ヒラマサ",
   "ヒラメ",
+  "ヒレナガカンパチ",
   "フグ",
   "フッコ",
   "ブリ",
   "ベニアコウ",
   "ホウボウ",
+  "ホンガツオ",
   "マアジ",
   "マグロ",
   "マゴチ",
+  "マサバ",
   "マダイ",
   "マダコ",
   "マハタ",
+  "マメアジ",
   "マルイカ",
   "ムギイカ",
+  "ムシガレイ",
+  "ムツ",
+  "ムラソイ",
+  "メゴチ",
+  "メジナ",
   "メダイ",
   "メヌケ",
   "メバル",
+  "モロコ",
+  "モンゴウ",
+  "ヤガラ",
+  "ヤナギダコ",
   "ヤリイカ",
   "ユメカサゴ",
+  "レンコダイ",
+  "ワニゴチ",
   "ワラサ"
  ],
  "ports": [
@@ -98,7 +174,9 @@
   "ぷかりさん橋",
   "三崎港",
   "上総湊港",
+  "下田港",
   "久慈漁港",
+  "久料港",
   "久比里",
   "久留和漁港",
   "久里浜港",
@@ -108,18 +186,25 @@
   "今井水門",
   "伊勢町",
   "伊戸漁港",
+  "伊東港",
   "会瀬漁港",
+  "佃島",
   "佐島港",
   "保田港",
+  "元市川港",
   "八幡橋",
   "六郷水門",
+  "初声漁港",
   "勝山漁港",
   "勝浦マリンハーバー",
   "勝浦港",
   "千住大橋",
   "呑川",
+  "和田漁港",
   "品川堀",
   "外川漁港",
+  "多摩川",
+  "多比港",
   "夢の島桟橋",
   "大原港",
   "大沢港",
@@ -127,65 +212,98 @@
   "大津漁港",
   "大磯港",
   "大黒運河",
+  "天津漁港",
+  "太夫崎漁港",
   "太東港",
   "太海漁港",
+  "宇佐美港",
+  "安良里港",
+  "宮川港",
+  "富浦新港",
   "寒川港",
   "小名木川",
   "小坪漁港",
+  "小岩大橋",
   "小浦漁港",
   "小湊漁港",
   "小田原新港",
   "小網代港",
+  "岩和田港",
   "岩漁港",
   "川名漁港",
   "川津港",
   "平和島",
   "平塚新港",
   "平塚漁港",
+  "平潟港",
+  "御宿漁港",
+  "戸又港",
+  "戸田港",
+  "手石港",
   "新中川橋",
   "新今井橋",
+  "新安浦港",
   "新片貝港",
   "日立港第五埠頭",
   "早川漁港",
   "木場",
   "木更津港",
+  "本牧漁港",
   "東京湾マリーナ",
   "東葛西",
+  "松崎港",
   "松輪江奈漁港",
   "松部漁港",
   "柴漁港",
   "根岸橋",
   "横浜港新山下",
+  "江の浦港",
   "江戸川放水路",
+  "江梨港",
   "江見漁港",
   "河原子港",
+  "沼津内港",
   "波崎新港",
+  "波崎港",
   "洲崎栄ノ浦港",
   "洲崎漁港",
   "浜行川港",
   "浦安",
   "浦賀港",
   "海老取川",
+  "熱海伊豆山港",
+  "熱海港",
   "片瀬漁港",
   "片貝旧港",
+  "瑞江大橋",
   "白間津港",
   "相浜港",
   "真間川",
   "真鶴港",
   "福浦港",
+  "秋谷漁港",
+  "稲取港",
   "立会川勝島運河",
+  "竹岡港",
+  "網代港",
   "羽田",
   "腰越漁港",
+  "船橋港",
+  "芦名漁港",
   "茅ヶ崎港",
   "荒川笹目橋",
   "葉山芝崎港",
   "葉山鐙摺港",
+  "葛西橋",
+  "見立外漁港",
   "走水港",
   "越中島川",
   "那珂湊港",
   "都川",
   "金沢八景乙舳",
   "金沢八景平潟",
+  "金沢八景洲崎",
+  "金沢八景瀬戸橋",
   "金沢漁港",
   "金田漁港",
   "金谷漁港",
@@ -195,10 +313,13 @@
   "長井漆山港",
   "長井荒崎漁港",
   "間口漁港",
+  "静浦漁港",
+  "須崎港",
   "飯岡漁港",
   "鮫洲勝島運河",
   "鴨居大室漁港",
   "鴨川漁港",
+  "鶴見川",
   "鹿島橋",
   "鹿嶋新港",
   "鹿嶋旧港",
@@ -281,6 +402,45 @@
    ]
   },
   {
+   "id": "00980",
+   "name": "しまや丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "乙浜漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00980.html",
+   "fish": [
+    "オニカサゴ",
+    "カサゴ",
+    "キントキ",
+    "キンメ",
+    "クロムツ",
+    "スルメイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01197",
+   "name": "尭丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "乙浜漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01197.html",
+   "fish": [
+    "イサキ",
+    "オニカサゴ",
+    "カンコ",
+    "キンメ",
+    "クロムツ",
+    "ムツ",
+    "ユメカサゴ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00902",
    "name": "有希丸",
    "pref": "千葉県",
@@ -359,6 +519,20 @@
    ]
   },
   {
+   "id": "01652",
+   "name": "REDHEAD",
+   "pref": "千葉県",
+   "city": "",
+   "port": "元市川港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01652.html",
+   "fish": [
+    "マゴチ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01019",
    "name": "利八丸",
    "pref": "千葉県",
@@ -391,6 +565,21 @@
    ]
   },
   {
+   "id": "01651",
+   "name": "SeafariJapan",
+   "pref": "千葉県",
+   "city": "",
+   "port": "勝浦マリンハーバー",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01651.html",
+   "fish": [
+    "カンパチ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00696",
    "name": "With-Ocean",
    "pref": "千葉県",
@@ -420,6 +609,25 @@
     "オニカサゴ",
     "スルメイカ"
    ]
+  },
+  {
+   "id": "01004",
+   "name": "美智丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "和田漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01004.html",
+   "fish": [
+    "アオハタ",
+    "イサキ",
+    "ヒラメ",
+    "ベニアコウ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00970",
@@ -467,6 +675,20 @@
    ]
   },
   {
+   "id": "00968",
+   "name": "間宮星勝丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "外川漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00968.html",
+   "fish": [
+    "ヒラメ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00789",
    "name": "利永丸",
    "pref": "千葉県",
@@ -482,6 +704,44 @@
     "マダイ",
     "マダコ"
    ]
+  },
+  {
+   "id": "00773",
+   "name": "加幸丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00773.html",
+   "fish": [
+    "カサゴ",
+    "キントキ",
+    "ハタ",
+    "ヒラメ",
+    "マハタ",
+    "ヤガラ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00730",
+   "name": "勝見屋・初栄丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00730.html",
+   "fish": [
+    "イサキ",
+    "カサゴ",
+    "キントキ",
+    "ヒラメ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00784",
@@ -515,6 +775,28 @@
    ]
   },
   {
+   "id": "00764",
+   "name": "富久丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00764.html",
+   "fish": [
+    "イサキ",
+    "ウマズラハギ",
+    "カサゴ",
+    "サバ",
+    "シマアジ",
+    "ソーダガツオ",
+    "ヒラメ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00136",
    "name": "富士丸",
    "pref": "千葉県",
@@ -526,6 +808,25 @@
    "fish": [
     "マダイ"
    ]
+  },
+  {
+   "id": "01211",
+   "name": "山正丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01211.html",
+   "fish": [
+    "イナダ",
+    "カンパチ",
+    "サンパク",
+    "ヒラマサ",
+    "マダイ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00787",
@@ -697,6 +998,26 @@
    ]
   },
   {
+   "id": "00534",
+   "name": "長福丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "大原港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00534.html",
+   "fish": [
+    "イサキ",
+    "カサゴ",
+    "シマアジ",
+    "ヒラメ",
+    "フグ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01344",
    "name": "隆光丸",
    "pref": "千葉県",
@@ -729,6 +1050,56 @@
     "ヤリイカ",
     "ワラサ"
    ]
+  },
+  {
+   "id": "01196",
+   "name": "第八鶴丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "天津漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01196.html",
+   "fish": [
+    "スルメイカ",
+    "マダイ",
+    "マルイカ",
+    "ムギイカ",
+    "ムツ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01195",
+   "name": "若快昌丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "天津漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01195.html",
+   "fish": [
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01003",
+   "name": "鈴丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "太夫崎漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01003.html",
+   "fish": [
+    "カサゴ",
+    "ヒラメ",
+    "マハタ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00131",
@@ -788,6 +1159,28 @@
    ]
   },
   {
+   "id": "01493",
+   "name": "酒井丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "富浦新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01493.html",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "カサゴ",
+    "クロムツ",
+    "トラフグ",
+    "ハタ",
+    "マダイ",
+    "マメアジ",
+    "メジナ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01016",
    "name": "守山丸",
    "pref": "千葉県",
@@ -805,6 +1198,25 @@
     "マダコ",
     "メバル"
    ]
+  },
+  {
+   "id": "01033",
+   "name": "小峯丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "寒川港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01033.html",
+   "fish": [
+    "アジ",
+    "サワラ",
+    "シロギス",
+    "シーバス",
+    "タコ",
+    "タチウオ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01494",
@@ -874,6 +1286,47 @@
    ]
   },
   {
+   "id": "01220",
+   "name": "義丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "岩和田港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01220.html",
+   "fish": [
+    "アジ",
+    "アラ",
+    "オキカサゴ",
+    "オニカサゴ",
+    "カンコ",
+    "クロムツ",
+    "サバ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01215",
+   "name": "長栄丸 -御宿岩和田-",
+   "pref": "千葉県",
+   "city": "（千葉県）の最新釣果情報",
+   "port": "岩和田港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01215.html",
+   "fish": [
+    "アカハタ",
+    "カンパチ",
+    "スマガツオ",
+    "ヒラマサ",
+    "マダイ",
+    "マハタ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00987",
    "name": "竜一丸",
    "pref": "千葉県",
@@ -905,6 +1358,26 @@
    ]
   },
   {
+   "id": "01154",
+   "name": "宏昌丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "川津港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01154.html",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カンパチ",
+    "サンパク",
+    "ヒラマサ",
+    "ヒレナガカンパチ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01167",
    "name": "新勝丸",
    "pref": "千葉県",
@@ -917,6 +1390,23 @@
     "ヒラマサ",
     "ワラサ"
    ]
+  },
+  {
+   "id": "01199",
+   "name": "布子丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "御宿漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01199.html",
+   "fish": [
+    "イカ",
+    "オニカサゴ",
+    "カンコ",
+    "ヒラメ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00761",
@@ -949,6 +1439,62 @@
     "マダコ",
     "ワラサ"
    ]
+  },
+  {
+   "id": "00716",
+   "name": "宮川丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "木更津港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00716.html",
+   "fish": [
+    "サゴシ",
+    "サワラ",
+    "シロギス",
+    "タチウオ",
+    "トラフグ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00474",
+   "name": "信照丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "松部漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00474.html",
+   "fish": [
+    "アカヤガラ",
+    "カサゴ",
+    "チカメキントキ",
+    "ハチカサゴ",
+    "ヒラメ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00473",
+   "name": "和八丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "松部漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00473.html",
+   "fish": [
+    "サバ",
+    "スルメ",
+    "スルメイカ",
+    "マサバ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01152",
@@ -1085,6 +1631,25 @@
    ]
   },
   {
+   "id": "01256",
+   "name": "佐衛美丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "洲崎漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01256.html",
+   "fish": [
+    "アオリイカ",
+    "アカヤガラ",
+    "イサキ",
+    "カサゴ",
+    "カンパチ",
+    "ソーダガツオ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00989",
    "name": "第2美吉丸",
    "pref": "千葉県",
@@ -1192,6 +1757,25 @@
    ]
   },
   {
+   "id": "00127",
+   "name": "松大丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "白間津港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00127.html",
+   "fish": [
+    "イサキ",
+    "サンノジ",
+    "シマアジ",
+    "スルメイカ",
+    "フグ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00991",
    "name": "甚四郎丸",
    "pref": "千葉県",
@@ -1252,6 +1836,78 @@
     "アジ",
     "イシモチ"
    ]
+  },
+  {
+   "id": "01209",
+   "name": "豊国丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "竹岡港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01209.html",
+   "fish": [
+    "イトヨリ",
+    "カサゴ",
+    "カワハギ",
+    "タイ",
+    "ホウボウ",
+    "マダイ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01034",
+   "name": "鏡屋",
+   "pref": "千葉県",
+   "city": "",
+   "port": "竹岡港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01034.html",
+   "fish": [
+    "アマダイ",
+    "イトヨリ",
+    "カサゴ",
+    "シロアマダイ",
+    "トラフグ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01204",
+   "name": "つり滝",
+   "pref": "千葉県",
+   "city": "",
+   "port": "船橋港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01204.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "カサゴ",
+    "キス",
+    "サバ",
+    "シロギス"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00124",
+   "name": "OASIS",
+   "pref": "千葉県",
+   "city": "",
+   "port": "見立外漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00124.html",
+   "fish": [
+    "シーバス"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01427",
@@ -1358,6 +2014,26 @@
     "ヒラメ",
     "マダイ"
    ]
+  },
+  {
+   "id": "00958",
+   "name": "清勝丸",
+   "pref": "千葉県",
+   "city": "",
+   "port": "飯岡漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00958.html",
+   "fish": [
+    "アジ",
+    "アラ",
+    "オニカサゴ",
+    "カンコ",
+    "ハナダイ",
+    "ヒラメ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00777",
@@ -1471,6 +2147,20 @@
    ]
   },
   {
+   "id": "01508",
+   "name": "AMC Meister",
+   "pref": "東京都",
+   "city": "",
+   "port": "あみ平マリーナ",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01508.html",
+   "fish": [
+    "シーバス"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01332",
    "name": "Sea Frog",
    "pref": "東京都",
@@ -1530,6 +2220,24 @@
    ]
   },
   {
+   "id": "00885",
+   "name": "佃中澤",
+   "pref": "東京都",
+   "city": "",
+   "port": "佃島",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00885.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "カサゴ",
+    "シロギス",
+    "マアジ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01274",
    "name": "ミナミ釣船",
    "pref": "東京都",
@@ -1577,6 +2285,43 @@
    ]
   },
   {
+   "id": "00303",
+   "name": "プレアデス",
+   "pref": "東京都",
+   "city": "",
+   "port": "呑川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00303.html",
+   "fish": [
+    "イナダ",
+    "サワラ",
+    "シーバス",
+    "セイゴ",
+    "タコ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00833",
+   "name": "ひらい丸",
+   "pref": "東京都",
+   "city": "",
+   "port": "品川堀",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00833.html",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "タチウオ",
+    "トラフグ",
+    "マアジ",
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00698",
    "name": "三河屋",
    "pref": "東京都",
@@ -1619,6 +2364,22 @@
     "サワラ",
     "マゴチ"
    ]
+  },
+  {
+   "id": "00616",
+   "name": "たかはし丸",
+   "pref": "東京都",
+   "city": "",
+   "port": "小岩大橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00616.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "カサゴ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00976",
@@ -1730,6 +2491,20 @@
    ]
   },
   {
+   "id": "00901",
+   "name": "Seven Seas",
+   "pref": "東京都",
+   "city": "",
+   "port": "瑞江大橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00901.html",
+   "fish": [
+    "シーバス"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01460",
    "name": "大山丸",
    "pref": "東京都",
@@ -1775,6 +2550,25 @@
    ]
   },
   {
+   "id": "00322",
+   "name": "えさ政釣船店",
+   "pref": "東京都",
+   "city": "",
+   "port": "羽田",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00322.html",
+   "fish": [
+    "カサゴ",
+    "カワハギ",
+    "ショウサイフグ",
+    "トラフグ",
+    "ヒガンフグ",
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00702",
    "name": "かめだや",
    "pref": "東京都",
@@ -1790,6 +2584,24 @@
    ]
   },
   {
+   "id": "00745",
+   "name": "荒川屋釣船店",
+   "pref": "東京都",
+   "city": "",
+   "port": "葛西橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00745.html",
+   "fish": [
+    "イシモチ",
+    "コアジ",
+    "コダイ",
+    "サバ",
+    "シロギス"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01532",
    "name": "船宿内田",
    "pref": "東京都",
@@ -1802,6 +2614,25 @@
     "クロダイ",
     "フッコ"
    ]
+  },
+  {
+   "id": "00949",
+   "name": "深川冨士見",
+   "pref": "東京都",
+   "city": "",
+   "port": "釣船橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00949.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "キス",
+    "タコ",
+    "ハゼ",
+    "メゴチ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00161",
@@ -1820,6 +2651,25 @@
     "タチウオ",
     "マダコ"
    ]
+  },
+  {
+   "id": "01469",
+   "name": "和彦丸",
+   "pref": "東京都",
+   "city": "",
+   "port": "鮫洲勝島運河",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01469.html",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "カワハギ",
+    "シロギス",
+    "タチウオ",
+    "マサバ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01322",
@@ -1926,6 +2776,43 @@
    ]
   },
   {
+   "id": "00289",
+   "name": "山下丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "久比里",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00289.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "カサゴ",
+    "カワハギ",
+    "シロアマダイ",
+    "スミイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00288",
+   "name": "巳之助丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "久比里",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00288.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "カワハギ",
+    "キダイ",
+    "サバ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00910",
    "name": "隠居丸",
    "pref": "神奈川県",
@@ -1942,6 +2829,25 @@
     "ハタ",
     "ヒラメ"
    ]
+  },
+  {
+   "id": "01161",
+   "name": "平作丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "久里浜港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01161.html",
+   "fish": [
+    "イサキ",
+    "イシダイ",
+    "イナダ",
+    "クロダイ",
+    "タチウオ",
+    "マダイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01159",
@@ -1985,6 +2891,21 @@
     "キハダマグロ",
     "マダイ"
    ]
+  },
+  {
+   "id": "00924",
+   "name": "ながつか丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "伊勢町",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00924.html",
+   "fish": [
+    "オニカサゴ",
+    "カンコ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00866",
@@ -2045,6 +2966,26 @@
    ]
   },
   {
+   "id": "01473",
+   "name": "成海丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "佐島港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01473.html",
+   "fish": [
+    "アオリ",
+    "アオリイカ",
+    "イカ",
+    "イナダ",
+    "キハダ",
+    "コウイカ",
+    "サワラ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00809",
    "name": "深田家",
    "pref": "神奈川県",
@@ -2082,6 +3023,20 @@
    ]
   },
   {
+   "id": "00914",
+   "name": "鶴丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "佐島港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00914.html",
+   "fish": [
+    "アオリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01502",
    "name": "濱生丸",
    "pref": "神奈川県",
@@ -2110,6 +3065,49 @@
    ]
   },
   {
+   "id": "00937",
+   "name": "丸政丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "初声漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00937.html",
+   "fish": [
+    "ヒラメ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01226",
+   "name": "高松丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "多摩川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01226.html",
+   "fish": [
+    "カサゴ",
+    "コノシロ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01310",
+   "name": "BACH淳敏丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "大津漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01310.html",
+   "fish": [
+    "アジ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00711",
    "name": "まるまつ丸",
    "pref": "神奈川県",
@@ -2121,6 +3119,21 @@
    "fish": [
     "アジ"
    ]
+  },
+  {
+   "id": "00458",
+   "name": "小川丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "大津漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00458.html",
+   "fish": [
+    "タチウオ",
+    "マアジ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00824",
@@ -2140,6 +3153,54 @@
     "マダイ",
     "ワラサ"
    ]
+  },
+  {
+   "id": "00876",
+   "name": "六熊丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "大磯港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00876.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "カツオ",
+    "キハダ",
+    "キメジ",
+    "タチウオ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01609",
+   "name": "第5ふじ丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "大磯港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01609.html",
+   "fish": [
+    "アマダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00823",
+   "name": "辰丸 -大磯-",
+   "pref": "神奈川県",
+   "city": "（神奈川県）の最新釣果情報",
+   "port": "大磯港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00823.html",
+   "fish": [
+    "クロシビカマス",
+    "メダイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00683",
@@ -2189,6 +3250,26 @@
     "タコ",
     "メバル"
    ]
+  },
+  {
+   "id": "00791",
+   "name": "二宮丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "宮川港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00791.html",
+   "fish": [
+    "アオリ",
+    "ウルメ",
+    "オアカムロ",
+    "カツオ",
+    "キハダ",
+    "マダイ",
+    "モロコ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01075",
@@ -2347,6 +3428,47 @@
    ]
   },
   {
+   "id": "00812",
+   "name": "長谷川丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "小田原新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00812.html",
+   "fish": [
+    "イナダ",
+    "キハダ",
+    "スルメイカ",
+    "ホンガツオ",
+    "ムギイカ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00304",
+   "name": "丸十丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "小網代港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00304.html",
+   "fish": [
+    "アカボラ",
+    "アマダイ",
+    "アヤメカサゴ",
+    "イトヨリ",
+    "オキメバル",
+    "オニカサゴ",
+    "カワハギ",
+    "ホウボウ",
+    "レンコダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00709",
    "name": "所ヱ門丸",
    "pref": "神奈川県",
@@ -2423,6 +3545,28 @@
     "ヒラメ",
     "マルイカ"
    ]
+  },
+  {
+   "id": "01080",
+   "name": "浅八丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "平塚新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01080.html",
+   "fish": [
+    "アオハタ",
+    "アジ",
+    "アマダイ",
+    "イネゴチ",
+    "カサゴ",
+    "カツオ",
+    "キンメ",
+    "ヒラメ",
+    "ムツ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01680",
@@ -2524,6 +3668,25 @@
    ]
   },
   {
+   "id": "00562",
+   "name": "こうゆう丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "新安浦港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00562.html",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "サバ",
+    "タチウオ",
+    "ホウボウ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01672",
    "name": "光義丸",
    "pref": "神奈川県",
@@ -2544,6 +3707,43 @@
    ]
   },
   {
+   "id": "00692",
+   "name": "弘美丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "早川漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00692.html",
+   "fish": [
+    "アジ",
+    "カツオ",
+    "キハダ",
+    "スルメイカ",
+    "マダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01020",
+   "name": "舟右エ門丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "早川漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01020.html",
+   "fish": [
+    "アマダイ",
+    "カナガシラ",
+    "ガンゾウビラメ",
+    "シキシマハナダイ",
+    "ワニゴチ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00820",
    "name": "隠徳丸",
    "pref": "神奈川県",
@@ -2557,6 +3757,25 @@
     "キハダマグロ",
     "シイラ"
    ]
+  },
+  {
+   "id": "00154",
+   "name": "長崎屋",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "本牧漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00154.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "クロダイ",
+    "シロギス",
+    "ホウボウ",
+    "マダコ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01036",
@@ -2849,6 +4068,25 @@
    ]
   },
   {
+   "id": "00272",
+   "name": "三喜丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "柴漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00272.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "クロダイ",
+    "タチウオ",
+    "マダコ",
+    "モンゴウ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01733",
    "name": "BLUE LANE YOKOHAMA",
    "pref": "神奈川県",
@@ -2893,6 +4131,25 @@
    ]
   },
   {
+   "id": "00158",
+   "name": "黒川本家 -新山下-",
+   "pref": "神奈川県",
+   "city": "（神奈川県）の最新釣果情報",
+   "port": "横浜港新山下",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00158.html",
+   "fish": [
+    "アジ",
+    "イシモチ",
+    "カサゴ",
+    "クロダイ",
+    "サバ",
+    "タコ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00945",
    "name": "みのる丸",
    "pref": "神奈川県",
@@ -2904,6 +4161,28 @@
    "fish": [
     "カサゴ"
    ]
+  },
+  {
+   "id": "01030",
+   "name": "まなぶ丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "片瀬漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01030.html",
+   "fish": [
+    "アマダイ",
+    "アヤメカサゴ",
+    "アラ",
+    "オニカサゴ",
+    "カンコ",
+    "ヒメコダイ",
+    "ホウボウ",
+    "ユメカサゴ",
+    "ワニゴチ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00366",
@@ -2939,6 +4218,25 @@
     "スルメイカ",
     "ムギイカ"
    ]
+  },
+  {
+   "id": "00913",
+   "name": "さい丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "真鶴港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00913.html",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "アマダイ",
+    "イトヨリ",
+    "カイワリ",
+    "カサゴ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00815",
@@ -3112,6 +4410,41 @@
    ]
   },
   {
+   "id": "01194",
+   "name": "雅裕丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "福浦港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01194.html",
+   "fish": [
+    "アマダイ",
+    "オキメバル",
+    "サバ",
+    "シキシマハナダイ",
+    "ソウダガツオ",
+    "ホウボウ",
+    "マダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00940",
+   "name": "清四郎丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "秋谷漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00940.html",
+   "fish": [
+    "アオリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00270",
    "name": "喜久丸",
    "pref": "神奈川県",
@@ -3128,6 +4461,45 @@
     "ハナダイ",
     "マダイ"
    ]
+  },
+  {
+   "id": "00298",
+   "name": "多希志丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "腰越漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00298.html",
+   "fish": [
+    "アマダイ",
+    "カワハギ",
+    "マルイカ",
+    "ムギイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00707",
+   "name": "孝太郎丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "腰越漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00707.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イトヨリ",
+    "イラ",
+    "クロダイ",
+    "サバ",
+    "ハナダイ",
+    "ホウボウ",
+    "マダイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00153",
@@ -3165,6 +4537,63 @@
    ]
   },
   {
+   "id": "00371",
+   "name": "船宿 秋田屋",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "腰越漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00371.html",
+   "fish": [
+    "イナダ",
+    "キンメダイ",
+    "クロムツ",
+    "サバ",
+    "シロムツ",
+    "スミヤキ",
+    "ハナダイ",
+    "マアジ",
+    "マダイ",
+    "メダイ",
+    "ユメカサゴ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00911",
+   "name": "飯岡丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "腰越漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00911.html",
+   "fish": [
+    "アマダイ",
+    "イトヨリ",
+    "キダイ",
+    "スルメイカ",
+    "ヒメコダイ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00907",
+   "name": "芦名常丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "芦名漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00907.html",
+   "fish": [
+    "シイラ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01079",
    "name": "ちがさき丸",
    "pref": "神奈川県",
@@ -3186,6 +4615,27 @@
     "ヒラメ",
     "マダイ"
    ]
+  },
+  {
+   "id": "00448",
+   "name": "まごうの丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "茅ヶ崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00448.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イナダ",
+    "カンパチ",
+    "シロギス",
+    "ヒラメ",
+    "マダイ",
+    "マルイカ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00318",
@@ -3264,6 +4714,23 @@
    ]
   },
   {
+   "id": "01140",
+   "name": "健洋丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "走水港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01140.html",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "ヒラメ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00861",
    "name": "政信丸",
    "pref": "神奈川県",
@@ -3281,6 +4748,25 @@
     "マダイ",
     "ワラサ"
    ]
+  },
+  {
+   "id": "00845",
+   "name": "教至丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "走水港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00845.html",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "サバ",
+    "タチウオ",
+    "マダイ",
+    "マルイカ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00877",
@@ -3324,6 +4810,24 @@
    ]
   },
   {
+   "id": "00757",
+   "name": "太田屋",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢八景乙舳",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00757.html",
+   "fish": [
+    "アジ",
+    "タチウオ",
+    "マゴチ",
+    "マダイ",
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "01580",
    "name": "村本海事",
    "pref": "神奈川県",
@@ -3343,6 +4847,27 @@
     "マダコ",
     "メバル"
    ]
+  },
+  {
+   "id": "00836",
+   "name": "米元釣船店",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢八景平潟",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00836.html",
+   "fish": [
+    "アオアジ",
+    "アジ",
+    "イサキ",
+    "イシモチ",
+    "クロダイ",
+    "シロギス",
+    "タチウオ",
+    "マダイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00007",
@@ -3392,6 +4917,48 @@
    ]
   },
   {
+   "id": "00307",
+   "name": "一之瀬丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢八景洲崎",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00307.html",
+   "fish": [
+    "アジ",
+    "カワハギ",
+    "シロギス",
+    "タチウオ",
+    "トラフグ",
+    "マゴチ",
+    "マダイ",
+    "マダコ",
+    "マルイカ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00300",
+   "name": "弁天屋",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢八景瀬戸橋",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00300.html",
+   "fish": [
+    "アジ",
+    "カワハギ",
+    "シロギス",
+    "タチウオ",
+    "マゴチ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00141",
    "name": "久保弘丸",
    "pref": "神奈川県",
@@ -3437,6 +5004,28 @@
    ]
   },
   {
+   "id": "00152",
+   "name": "修司丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00152.html",
+   "fish": [
+    "オニカサゴ",
+    "カサゴ",
+    "カンコ",
+    "クロムツ",
+    "サバ",
+    "トラフグ",
+    "ノドグロカサゴ",
+    "ブリ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00012",
    "name": "健一丸",
    "pref": "神奈川県",
@@ -3464,6 +5053,25 @@
     "アジ",
     "タチウオ"
    ]
+  },
+  {
+   "id": "00011",
+   "name": "木川丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金沢漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00011.html",
+   "fish": [
+    "アジ",
+    "クロダイ",
+    "シロギス",
+    "タチウオ",
+    "マダイ",
+    "マダコ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00155",
@@ -3527,6 +5135,20 @@
     "マダイ",
     "マダコ"
    ]
+  },
+  {
+   "id": "00870",
+   "name": "丸と丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "金田漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00870.html",
+   "fish": [
+    "マダイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01213",
@@ -3663,6 +5285,25 @@
     "スルメイカ",
     "マルイカ"
    ]
+  },
+  {
+   "id": "00808",
+   "name": "鈴清丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "長井新宿港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00808.html",
+   "fish": [
+    "アオリイカ",
+    "カツオ",
+    "キハダ",
+    "キメジ",
+    "キンメ",
+    "クロムツ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01467",
@@ -3887,6 +5528,27 @@
    ]
   },
   {
+   "id": "01021",
+   "name": "佐助丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "間口漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01021.html",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "カマス",
+    "カワハギ",
+    "クロダイ",
+    "サバ",
+    "ヒラメ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00921",
    "name": "儀平丸",
    "pref": "神奈川県",
@@ -4083,6 +5745,25 @@
    ]
   },
   {
+   "id": "00148",
+   "name": "五郎丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "鴨居大室漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00148.html",
+   "fish": [
+    "アジ",
+    "カワハギ",
+    "クロムツ",
+    "サバ",
+    "タチウオ",
+    "マルイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00690",
    "name": "房丸",
    "pref": "神奈川県",
@@ -4096,6 +5777,63 @@
     "マダイ",
     "メバル"
    ]
+  },
+  {
+   "id": "00920",
+   "name": "新明丸",
+   "pref": "神奈川県",
+   "city": "",
+   "port": "鶴見川",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00920.html",
+   "fish": [
+    "コモンフグ",
+    "ショウサイフグ",
+    "トラフグ",
+    "ヒガンフグ",
+    "マゴチ",
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01234",
+   "name": "ふじしめ丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "久慈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01234.html",
+   "fish": [
+    "カサゴ",
+    "ハマチ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00170",
+   "name": "大貫丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "久慈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00170.html",
+   "fish": [
+    "アカアマダイ",
+    "アジ",
+    "カサゴ",
+    "ヒラメ",
+    "マダイ",
+    "ムラソイ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00181",
@@ -4126,6 +5864,26 @@
    ]
   },
   {
+   "id": "00174",
+   "name": "直重丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "久慈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00174.html",
+   "fish": [
+    "カサゴ",
+    "ショウサイフク",
+    "ソイ",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00172",
    "name": "第十五大勝丸",
    "pref": "茨城県",
@@ -4137,6 +5895,26 @@
    "fish": [
     "マダイ"
    ]
+  },
+  {
+   "id": "01257",
+   "name": "軍司丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "久慈漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01257.html",
+   "fish": [
+    "イナダ",
+    "ウマヅラ",
+    "カサゴ",
+    "ショウサイフク",
+    "ヒラメ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "01091",
@@ -4222,6 +6000,141 @@
    ]
   },
   {
+   "id": "00171",
+   "name": "山正丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "大洗港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00171.html",
+   "fish": [
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01238",
+   "name": "栄光丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "大洗港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01238.html",
+   "fish": [
+    "イシナギ",
+    "イナダ",
+    "ヒラマサ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ",
+    "マダコ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00973",
+   "name": "藤富丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "大洗港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00973.html",
+   "fish": [
+    "カサゴ",
+    "タチウオ",
+    "ハナダイ",
+    "ヒラメ",
+    "マダイ",
+    "マダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01104",
+   "name": "とも丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "平潟港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01104.html",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "ソイ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01217",
+   "name": "正八丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "平潟港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01217.html",
+   "fish": [
+    "イシナギ",
+    "イナダ",
+    "サバ",
+    "ヒラメ",
+    "ホウボウ",
+    "メバル",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01142",
+   "name": "第六隆栄丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "平潟港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01142.html",
+   "fish": [
+    "アカムツ",
+    "アマダイ",
+    "ホウボウ",
+    "ムシガレイ",
+    "メダイ",
+    "ヤナギダコ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01102",
+   "name": "英昇丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "平潟港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01102.html",
+   "fish": [
+    "アマダイ",
+    "イナダ",
+    "カサゴ",
+    "ソイ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ",
+    "メバル",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00737",
    "name": "日立丸",
    "pref": "茨城県",
@@ -4266,6 +6179,86 @@
    ]
   },
   {
+   "id": "00941",
+   "name": "ひろの丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "波崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00941.html",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "アラ",
+    "ウスメバル",
+    "オキカサゴ",
+    "オキメバル",
+    "カサゴ",
+    "カンコ",
+    "ムシガレイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01303",
+   "name": "仁徳丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "波崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01303.html",
+   "fish": [
+    "アカムツ",
+    "アジ",
+    "アラ",
+    "オキメバル",
+    "カンコ",
+    "ホウボウ",
+    "ムシガレイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00938",
+   "name": "浜べ丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "波崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00938.html",
+   "fish": [
+    "イナダ",
+    "カツオ",
+    "ヒラマサ",
+    "マハタ",
+    "ユメカサゴ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01121",
+   "name": "仙昇丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "那珂湊港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01121.html",
+   "fish": [
+    "カサゴ",
+    "スジイカ",
+    "マアジ",
+    "マダコ",
+    "マルイカ",
+    "メバル"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00972",
    "name": "第二つれたか丸",
    "pref": "茨城県",
@@ -4300,6 +6293,39 @@
    ]
   },
   {
+   "id": "00974",
+   "name": "兄弟丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00974.html",
+   "fish": [
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00956",
+   "name": "大栄丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00956.html",
+   "fish": [
+    "タチウオ",
+    "ヒラメ",
+    "マゴチ",
+    "マダイ",
+    "マダコ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00951",
    "name": "宗和丸",
    "pref": "茨城県",
@@ -4314,6 +6340,84 @@
     "マゴチ",
     "マダイ"
    ]
+  },
+  {
+   "id": "00944",
+   "name": "桜井丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00944.html",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カサゴ",
+    "サバ",
+    "ヒラメ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01295",
+   "name": "第二洋生丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01295.html",
+   "fish": [
+    "カサゴ",
+    "ショウサイフグ",
+    "タイ",
+    "ハナダイ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00961",
+   "name": "第五悌栄丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00961.html",
+   "fish": [
+    "スズキ",
+    "タチウオ",
+    "ハナダイ",
+    "ヒラメ",
+    "ホウボウ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00963",
+   "name": "鬼澤丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋新港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00963.html",
+   "fish": [
+    "アジ",
+    "カサゴ",
+    "コアジ",
+    "サバ",
+    "ソイ",
+    "ハタ",
+    "ワラサ"
+   ],
+   "via": "castingnet"
   },
   {
    "id": "00166",
@@ -4380,6 +6484,26 @@
    ]
   },
   {
+   "id": "00957",
+   "name": "山千丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋旧港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00957.html",
+   "fish": [
+    "アジ",
+    "イナダ",
+    "カサゴ",
+    "ヒラメ",
+    "マゴチ",
+    "マダコ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00164",
    "name": "幸栄丸",
    "pref": "茨城県",
@@ -4422,6 +6546,27 @@
    ]
   },
   {
+   "id": "00971",
+   "name": "義心丸",
+   "pref": "茨城県",
+   "city": "",
+   "port": "鹿嶋旧港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00971.html",
+   "fish": [
+    "イナダ",
+    "カサゴ",
+    "ガンゾウ",
+    "サバ",
+    "ハナダイ",
+    "フグ",
+    "ホウボウ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
    "id": "00529",
    "name": "豊丸",
    "pref": "茨城県",
@@ -4448,6 +6593,712 @@
     "ショウサイフグ",
     "マゴチ"
    ]
+  },
+  {
+   "id": "01396",
+   "name": "菊丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "下田港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01396.html",
+   "fish": [
+    "イカ",
+    "カサゴ",
+    "キンメ",
+    "キンメダイ",
+    "クロムツ",
+    "ムツ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01244",
+   "name": "魚磯丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "久料港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01244.html",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イナダ",
+    "ウマヅラ",
+    "オオモンハタ",
+    "サバ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00751",
+   "name": "村正丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "伊東港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00751.html",
+   "fish": [
+    "イサキ",
+    "ウマ",
+    "サバ",
+    "シマアジ",
+    "マアジ",
+    "マダイ",
+    "メジナ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01243",
+   "name": "明栄丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "多比港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01243.html",
+   "fish": [
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00749",
+   "name": "二階屋丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00749.html",
+   "fish": [
+    "アオリイカ",
+    "アカハタ",
+    "オオモンハタ",
+    "カサゴ",
+    "マルイカ",
+    "ムギイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01285",
+   "name": "嘉丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01285.html",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イトヨリ",
+    "イナダ",
+    "カイワリ",
+    "クロムツ",
+    "タイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01346",
+   "name": "富八丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01346.html",
+   "fish": [
+    "アジ",
+    "イサキ",
+    "イナダ",
+    "カイワリ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01284",
+   "name": "山川丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01284.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "カイワリ",
+    "ハナダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00746",
+   "name": "治久丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00746.html",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "オニカサゴ",
+    "カイワリ",
+    "ヒラメ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00273",
+   "name": "清貢丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00273.html",
+   "fish": [
+    "カツオ",
+    "サバ",
+    "シマアジ",
+    "スルメイカ",
+    "ブリ",
+    "ヤリイカ",
+    "レンコダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01283",
+   "name": "直正丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "宇佐美港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01283.html",
+   "fish": [
+    "アカムツ",
+    "アマダイ",
+    "アラ",
+    "オニカサゴ",
+    "カイワリ",
+    "キダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01242",
+   "name": "ふじなみ丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "安良里港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01242.html",
+   "fish": [
+    "アヤメカサゴ",
+    "イサキ",
+    "オオモンハタ",
+    "カンコ",
+    "サバ",
+    "ソウダガツオ",
+    "マダイ",
+    "レンコダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00837",
+   "name": "千とせ丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "戸又港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00837.html",
+   "fish": [
+    "アカイサキ",
+    "イサキ",
+    "カワハギ",
+    "ヒメダイ",
+    "マダイ",
+    "メダイ",
+    "レンコダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01255",
+   "name": "ふじ丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "戸田港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01255.html",
+   "fish": [
+    "アカハタ",
+    "イサキ",
+    "オオモンハタ",
+    "カサゴ",
+    "マダイ",
+    "マルイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01317",
+   "name": "もき丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01317.html",
+   "fish": [
+    "オナガ",
+    "カンパチ",
+    "キハダ",
+    "キンメ",
+    "ハガツオ",
+    "ヒラマサ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00588",
+   "name": "南伊豆忠兵衛丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00588.html",
+   "fish": [
+    "アブラボウズ",
+    "ウメイロ",
+    "カンパチ",
+    "キハダマグロ",
+    "キントキ",
+    "キンメダイ",
+    "ツムブリ",
+    "ハチビキ",
+    "ヒメダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01316",
+   "name": "恵丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01316.html",
+   "fish": [
+    "アコウダイ",
+    "オオクチハマダイ",
+    "カンパチ",
+    "キハダマグロ",
+    "キンメダイ",
+    "クロムツ",
+    "ハガツオ",
+    "ヒラマサ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01339",
+   "name": "滋丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01339.html",
+   "fish": [
+    "アカハタ",
+    "アヤメ",
+    "オニカサゴ",
+    "カンコ",
+    "カンパチ",
+    "スルメイカ",
+    "ムツ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01394",
+   "name": "第8寿広丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01394.html",
+   "fish": [
+    "イヤゴハタ",
+    "カンパチ",
+    "キメジ",
+    "ハガツオ",
+    "ヒラマサ",
+    "マダイ",
+    "マハタ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01312",
+   "name": "米丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "手石港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01312.html",
+   "fish": [
+    "イサキ",
+    "シマアジ",
+    "スマ",
+    "スルメ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00352",
+   "name": "権助丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "松崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00352.html",
+   "fish": [
+    "アカハタ",
+    "イサキ",
+    "オジサン",
+    "シマアジ",
+    "スルメイカ",
+    "ソウダカツオ",
+    "ソウダガツオ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00182",
+   "name": "伊勝丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "江の浦港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00182.html",
+   "fish": [
+    "アジ",
+    "イトヨリ",
+    "タチウオ",
+    "マルイカ",
+    "ムギイカ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00173",
+   "name": "真正丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "江梨港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00173.html",
+   "fish": [
+    "アジ",
+    "サバ",
+    "マダイ",
+    "マルイカ",
+    "ムギイカ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01311",
+   "name": "昌福丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "沼津内港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01311.html",
+   "fish": [
+    "アカハタ",
+    "アジ",
+    "アマダイ",
+    "カサゴ",
+    "タチウオ",
+    "ニベ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00138",
+   "name": "喜久丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "熱海伊豆山港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00138.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "アラ",
+    "イサキ",
+    "イトヨリ",
+    "スルメイカ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00197",
+   "name": "幸洋丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "熱海港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00197.html",
+   "fish": [
+    "アジ",
+    "アマダイ",
+    "イサキ",
+    "ウマヅラ",
+    "カワハギ",
+    "タマガシラ",
+    "メジナ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01741",
+   "name": "瀬戸丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "熱海港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01741.html",
+   "fish": [
+    "イサキ",
+    "カイワリ",
+    "キントキ",
+    "サバ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00179",
+   "name": "裕海丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "熱海港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00179.html",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "イトヨリ",
+    "カワハギ",
+    "ゴマサバ",
+    "サバ",
+    "タマガシラ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01309",
+   "name": "安貞丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "稲取港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01309.html",
+   "fish": [
+    "アカムツ",
+    "アマダイ",
+    "アラ",
+    "ハシキンメ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00425",
+   "name": "大喜丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "網代港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00425.html",
+   "fish": [
+    "アカイサキ",
+    "イサキ",
+    "オオモンハタ",
+    "クロムツ",
+    "グルクン",
+    "ヒラメ",
+    "メジナ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01369",
+   "name": "安菜丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "網代港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01369.html",
+   "fish": [
+    "アオリイカ",
+    "アマダイ",
+    "イサキ",
+    "クロムツ",
+    "マダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01734",
+   "name": "富士丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "網代港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01734.html",
+   "fish": [
+    "アヤメカサゴ",
+    "イサキ",
+    "オニカサゴ",
+    "カイワリ",
+    "カンコ",
+    "キントキ",
+    "ハナダイ",
+    "マダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00477",
+   "name": "鈴喜丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "網代港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00477.html",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "イナダ",
+    "クロムツ",
+    "マダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "01241",
+   "name": "第十五祥運丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "静浦漁港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship01241.html",
+   "fish": [
+    "アマダイ",
+    "イサキ",
+    "オニカサゴ",
+    "タチウオ",
+    "マルイカ",
+    "ムギイカ",
+    "ヤリイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00261",
+   "name": "三昭丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "須崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00261.html",
+   "fish": [
+    "アカハタ",
+    "キンメ",
+    "キンメダイ",
+    "クロムツ",
+    "スルメ",
+    "スルメイカ"
+   ],
+   "via": "castingnet"
+  },
+  {
+   "id": "00543",
+   "name": "久寿丸",
+   "pref": "静岡県",
+   "city": "",
+   "port": "須崎港",
+   "rating": null,
+   "reviews": 0,
+   "url": "https://reserve.castingnet.jp/ship00543.html",
+   "fish": [
+    "アカハタ",
+    "イサギ",
+    "オナガダイ",
+    "カサゴ",
+    "マダイ",
+    "メダイ"
+   ],
+   "via": "castingnet"
   }
  ]
 }

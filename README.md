@@ -12,8 +12,11 @@ python -m http.server 8770 --directory docs
 
 ## 仕組み
 
-- **データ源**: 釣割 `search/?area=92`（関東）を全ページ巡回してスナップショット化。
+- **データ源①**: 釣割 `search/?area=92`（関東）を全ページ巡回してスナップショット化。
   各釣船の 船名 / 県・市 / 漁港 / 評価・レビュー数 / 予約URL / 対象魚（プラン記載）を収集。
+- **データ源②**: キャスティング船釣り予約（reserve.castingnet.jp）。釣割と船IDが共通の同系列サイトで、
+  釣割検索に出ない「予約プラン非掲載」の船宿も地図APIに載っている。`tools/fetch_castingnet.py` が
+  差分を検出し、港（castingnet API）＋市・対象魚（釣割の釣果ページFAQ）を補完して追記する（`"via":"castingnet"` フラグ付き）。
 - **釣期判定**: 「今出船しているか」は関東の一般的な**釣期カレンダー**（手動キュレーション）で判定。
   釣割データは *魚種 ⇄ 漁港 ⇄ 船宿* の紐付けに使用する。
 - **絞り込みはクライアント側**: 魚種を選ぶ → その魚を狙える船を漁港ごとに集約表示。
@@ -29,16 +32,19 @@ funayado-finder/
 │     ├─ boats.json          ← 釣割スナップショット（tools/fetch_chowari.py が生成）
 │     └─ seasons.json        ← 釣期カレンダー（手動キュレーション・48種）
 ├─ tools/
-│  └─ fetch_chowari.py       ← スクレイパ（スナップショット更新用）
+│  ├─ fetch_chowari.py       ← スクレイパ①（釣割・スナップショット更新用）
+│  └─ fetch_castingnet.py    ← スクレイパ②（castingnet差分の追記用）
 └─ .claude/launch.json
 ```
 
 ## データ更新（スナップショット再取得）
 
 ```
-python tools/fetch_chowari.py
+python tools/fetch_chowari.py      # 釣割掲載分を全面更新（castingnet追記分は消えるので↓を続けて実行）
+python tools/fetch_castingnet.py   # castingnetにしかない船宿を差分追記
 ```
 → `docs/data/boats.json` を最新化。取得日は `generated` に記録。1req/秒でアクセス。
+新しい魚名が出た場合は実行ログの `[WARN]` に未マッピング一覧が出るので `seasons.json` の `aliases` に追加する。
 
 ## メモ（技術）
 
