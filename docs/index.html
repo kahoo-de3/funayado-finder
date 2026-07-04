@@ -56,6 +56,7 @@
   }
   .pref.on{background:rgba(55,160,214,.22); border-color:var(--accent2); color:#cfeaf9}
   .label{font-size:11px; color:#7fa6b8; margin:2px 2px -2px; letter-spacing:.4px}
+  .hint{font-size:11.5px; color:#c9954f; margin:1px 2px}
 
   /* species grid */
   .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:8px}
@@ -71,10 +72,6 @@
   .fish .nm{font-size:13px; font-weight:700; margin-top:4px; word-break:break-all}
   .fish .mi{font-size:10.5px; color:var(--sub); margin-top:3px}
   .fish .cnt{font-size:10.5px; color:#7fbfe0; margin-top:2px}
-  .fish .badge{
-    position:absolute; top:6px; right:6px; font-size:9.5px; font-weight:800;
-    background:var(--hot); color:#3a1600; border-radius:6px; padding:1px 5px;
-  }
   .empty{color:var(--sub); text-align:center; padding:30px 10px; font-size:14px}
 
   /* detail */
@@ -152,6 +149,7 @@
       </div>
       <div class="label">エリア（県）</div>
       <div class="row" id="prefRow"></div>
+      <div class="hint">※橙は旬を表す</div>
     </div>
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" style="display:none"></div>
@@ -266,7 +264,6 @@ function renderGrid(){
     const el=document.createElement('div');
     el.className="fish"+(hot?" hot":"")+((!hot&&!state.seasonOnly)?" dim":"");
     el.innerHTML =
-      (hot?'<span class="badge">今が旬</span>':'')+
       '<div class="em">'+(sp.emoji||"🐟")+'</div>'+
       '<div class="nm">'+sp.name+'</div>'+
       '<div class="mi">'+monthRangeText(sp.months)+'</div>'+
