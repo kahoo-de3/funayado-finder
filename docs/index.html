@@ -145,7 +145,7 @@
         <input id="q" type="search" placeholder="魚種を検索（例：マダイ、タチウオ、イカ）" autocomplete="off">
       </div>
       <div class="row">
-        <div class="toggle on" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
+        <div class="toggle" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
       </div>
       <div class="label">エリア</div>
       <div class="row" id="prefRow"></div>
@@ -175,7 +175,7 @@
 const REGIONS = ["茨城","千葉外房","千葉南房総","千葉内房","千葉湾奥","東京","横浜市内","神奈川湘南","伊豆"];
 const MONTHS_LABEL = ["1","2","3","4","5","6","7","8","9","10","11","12"];
 let DATA=null, SEASON=null, alias2sp=null;
-const state = { q:"", seasonOnly:true, regions:new Set(), selected:null };
+const state = { q:"", seasonOnly:false, regions:new Set(), selected:null };
 const now = new Date();
 const curMonth = now.getMonth()+1;
 
