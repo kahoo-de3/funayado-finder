@@ -51,6 +51,7 @@
   .toggle.on{background:var(--hot); border-color:var(--hot); color:#fff}
   .toggle .dot{width:9px;height:9px;border-radius:50%;background:#f0b48a;transition:.15s}
   .toggle.on .dot{background:#fff}
+  #tgCount{font-weight:800; letter-spacing:.3px}
   .pref{
     font-size:12.5px; color:#3f6478; background:var(--chip); border:1px solid var(--line);
     border-radius:999px; padding:5px 11px; cursor:pointer;
@@ -149,7 +150,7 @@
         <input id="q" type="search" placeholder="魚種を検索（例：マダイ、タチウオ、イカ）" autocomplete="off">
       </div>
       <div class="row">
-        <div class="toggle" id="tgSeason"><span class="dot"></span>現在出船しているものだけに絞る</div>
+        <div class="toggle" id="tgSeason"><span class="dot"></span>現在出船している魚種に限る<span id="tgCount"></span></div>
       </div>
     </div>
     <div class="grid" id="grid"></div>
@@ -287,14 +288,20 @@ function renderPrefRow(){
 function renderGrid(){
   const grid=document.getElementById('grid'); const empty=document.getElementById('empty');
   const q=state.q.trim();
-  let list=SEASON.species.slice();
+  let base=SEASON.species.slice();
 
   // 検索
-  if(q) list=list.filter(sp=> sp.name.includes(q) || sp.aliases.some(a=>a.includes(q)) );
-  // 県フィルタ（その県で出船する船がある種のみ）
-  if(state.regions.size) list=list.filter(sp=> speciesShipsFiltered(sp).length>0 );
-  // 釣期のみ
-  if(state.seasonOnly) list=list.filter(inSeason);
+  if(q) base=base.filter(sp=> sp.name.includes(q) || sp.aliases.some(a=>a.includes(q)) );
+  // エリアフィルタ（そのエリアで出船する船がある種のみ）
+  if(state.regions.size) base=base.filter(sp=> speciesShipsFiltered(sp).length>0 );
+
+  // トグルの括弧内: 絞る前（全該当）→ 絞った後（現在出船中）のカード数
+  const beforeCount=base.length;
+  const afterCount=base.filter(inSeason).length;
+  document.getElementById('tgCount').textContent='（'+beforeCount+'→'+afterCount+'）';
+
+  // 「現在出船している魚種に限る」オンなら出船中のみ
+  let list = state.seasonOnly ? base.filter(inSeason) : base;
 
   // 並び：釣期 > 船数
   list.sort((a,b)=>{
@@ -306,7 +313,7 @@ function renderGrid(){
   grid.innerHTML="";
   if(!list.length){
     empty.style.display="block";
-    empty.textContent = state.seasonOnly ? "この条件で現在出船している魚が見つかりません。「現在出船しているもの」をオフにするか、検索語・エリアを見直してください。" : "該当する魚種がありません。";
+    empty.textContent = state.seasonOnly ? "この条件で現在出船している魚種がありません。「現在出船している魚種に限る」をオフにするか、検索語・エリアを見直してください。" : "該当する魚種がありません。";
     return;
   }
   empty.style.display="none";
