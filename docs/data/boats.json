@@ -2,9 +2,9 @@
  "source": "chowari.jp (area=92 関東) + reserve.castingnet.jp",
  "generated": "2026-07-04",
  "area": 92,
- "ship_count": 402,
- "port_count": 155,
- "fish_count": 161,
+ "ship_count": 401,
+ "port_count": 154,
+ "fish_count": 160,
  "fish_names": [
   "アイナメ",
   "アオアジ",
@@ -80,7 +80,6 @@
   "コウイカ",
   "コダイ",
   "コチ",
-  "コノシロ",
   "コモンフグ",
   "ゴマサバ",
   "サゴシ",
@@ -203,7 +202,6 @@
   "和田漁港",
   "品川堀",
   "外川漁港",
-  "多摩川",
   "多比港",
   "夢の島桟橋",
   "大原港",
@@ -3075,21 +3073,6 @@
    "url": "https://reserve.castingnet.jp/ship00937.html",
    "fish": [
     "ヒラメ"
-   ],
-   "via": "castingnet"
-  },
-  {
-   "id": "01226",
-   "name": "高松丸",
-   "pref": "神奈川県",
-   "city": "",
-   "port": "多摩川",
-   "rating": null,
-   "reviews": 0,
-   "url": "https://reserve.castingnet.jp/ship01226.html",
-   "fish": [
-    "カサゴ",
-    "コノシロ"
    ],
    "via": "castingnet"
   },

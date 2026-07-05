@@ -417,6 +417,9 @@ Promise.all([
   fetch('data/seasons.json').then(r=>r.json()),
   fetch('data/manual_boats.json').then(r=>r.json()).catch(()=>({ships:[],merge_fish:{}}))
 ]).then(([boats,seasons,manual])=>{
+  // 除外リスト（スクレイパで再追加されても非表示にするid）
+  const excl=new Set(manual.exclude||[]);
+  if(excl.size) boats.ships=boats.ships.filter(s=>!excl.has(s.id));
   // 手動キュレーション分をマージ（id重複はスキップ）
   const ids=new Set(boats.ships.map(s=>s.id));
   (manual.ships||[]).forEach(s=>{ if(!ids.has(s.id)){ boats.ships.push(s); ids.add(s.id); } });

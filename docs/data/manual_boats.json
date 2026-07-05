@@ -1,5 +1,6 @@
 {
- "_note": "予約サイト（釣割・castingnet）に載っていない船宿の手動キュレーション。スクレイパ再実行でも消えない。ships=追加する船宿（idはm接頭辞で衝突回避）。merge_fish=既存船(boats.jsonのid)に公式サイト由来の魚種を追加合成。",
+ "_note": "予約サイト（釣割・castingnet）に載っていない船宿の手動キュレーション。スクレイパ再実行でも消えない。ships=追加する船宿（idはm接頭辞で衝突回避）。merge_fish=既存船(boats.jsonのid)に公式サイト由来の魚種を追加合成。exclude=表示から除外するboats.jsonのid（スクレイパで再追加されても非表示）。",
+ "exclude": ["01226"],
  "ships": [
   {
    "id": "m0001",
