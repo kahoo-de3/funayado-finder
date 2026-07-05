@@ -134,7 +134,6 @@
 <header>
   <h1>釣船検索 【関東編】</h1>
   <p class="sub">魚種を選ぶだけ ─ 今どの漁港・どの釣船から出船しているか</p>
-  <span class="season" id="seasonTag">季節を判定中…</span>
 </header>
 
 <div class="wrap">
@@ -410,8 +409,6 @@ function initControls(){
   const tg=document.getElementById('tgSeason');
   tg.onclick=()=>{ state.seasonOnly=!state.seasonOnly; tg.classList.toggle('on',state.seasonOnly); renderGrid(); };
   document.getElementById('back').onclick=closeDetail;
-  document.getElementById('seasonTag').textContent =
-    '今：'+ (now.getMonth()+1) + '月' + (now.getDate()<=10?'上旬':now.getDate()<=20?'中旬':'下旬') + '（'+jpSeasonName(curMonth)+'）の狙い目';
 }
 
 Promise.all([
