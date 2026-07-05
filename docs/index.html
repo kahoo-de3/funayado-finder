@@ -45,12 +45,12 @@
   .searchbox input::placeholder{color:#9ab3c2}
   .row{display:flex; flex-wrap:wrap; gap:7px; align-items:center}
   .toggle{
-    display:inline-flex; align-items:center; gap:7px; font-size:13px; color:var(--sub);
-    background:var(--panel); border:1px solid var(--line); border-radius:999px; padding:6px 12px; cursor:pointer; user-select:none;
+    display:inline-flex; align-items:center; gap:7px; font-size:13px; font-weight:700; color:#d1691f;
+    background:#fff4ec; border:2px solid var(--hot); border-radius:999px; padding:6px 13px; cursor:pointer; user-select:none;
   }
-  .toggle.on{background:rgba(15,159,137,.14); border-color:var(--accent); color:#0b7a68}
-  .toggle .dot{width:9px;height:9px;border-radius:50%;background:#bdd2df;transition:.15s}
-  .toggle.on .dot{background:var(--accent)}
+  .toggle.on{background:var(--hot); border-color:var(--hot); color:#fff}
+  .toggle .dot{width:9px;height:9px;border-radius:50%;background:#f0b48a;transition:.15s}
+  .toggle.on .dot{background:#fff}
   .pref{
     font-size:12.5px; color:#3f6478; background:var(--chip); border:1px solid var(--line);
     border-radius:999px; padding:5px 11px; cursor:pointer;
@@ -149,7 +149,7 @@
         <input id="q" type="search" placeholder="魚種を検索（例：マダイ、タチウオ、イカ）" autocomplete="off">
       </div>
       <div class="row">
-        <div class="toggle" id="tgSeason"><span class="dot"></span>現在出船しているもの</div>
+        <div class="toggle" id="tgSeason"><span class="dot"></span>現在出船しているものだけに絞る</div>
       </div>
     </div>
     <div class="grid" id="grid"></div>
