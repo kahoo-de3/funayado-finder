@@ -59,7 +59,6 @@
   .step{display:flex; align-items:center; gap:7px; font-size:14px; font-weight:800; color:var(--ink); margin:8px 2px 3px; letter-spacing:.5px}
   .step:first-child{margin-top:0}
   .stepno{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; background:var(--accent); color:#04231d; font-size:13px; font-weight:900}
-  .hint{font-size:11.5px; color:#c9954f; margin:1px 2px}
 
   /* species grid */
   .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:8px}
@@ -69,8 +68,6 @@
     transition:transform .08s, border-color .12s, background .12s;
   }
   .fish:active{transform:scale(.96)}
-  .fish.hot{border-color:rgba(255,138,61,.55); background:linear-gradient(180deg,#123646,#14313a)}
-  .fish.dim{opacity:.42}
   .fish .em{font-size:24px; line-height:1}
   .fish .nm{font-size:13px; font-weight:700; margin-top:4px; word-break:break-all}
   .fish .mi{font-size:10.5px; color:var(--sub); margin-top:3px}
@@ -153,7 +150,6 @@
       <div class="row">
         <div class="toggle" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
       </div>
-      <div class="hint">※橙は旬を表す</div>
     </div>
     <div class="grid" id="grid"></div>
     <div class="empty" id="empty" style="display:none"></div>
@@ -316,9 +312,8 @@ function renderGrid(){
   list.forEach(sp=>{
     const nShips=speciesShipsFiltered(sp).length;
     const nPorts=new Set(speciesShipsFiltered(sp).map(s=>s.port).filter(Boolean)).size;
-    const hot=inSeason(sp);
     const el=document.createElement('div');
-    el.className="fish"+(hot?" hot":"")+((!hot&&!state.seasonOnly)?" dim":"");
+    el.className="fish";
     el.innerHTML =
       '<div class="nm">'+sp.name+'</div>'+
       '<div class="mi">'+monthRangeText(sp.months)+'</div>'+
