@@ -147,7 +147,7 @@
       <div class="row">
         <div class="toggle on" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
       </div>
-      <div class="label">エリア（県）</div>
+      <div class="label">エリア</div>
       <div class="row" id="prefRow"></div>
       <div class="hint">※橙は旬を表す</div>
     </div>
@@ -171,12 +171,55 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const PREFS = ["茨城県","千葉県","埼玉県","東京都","神奈川県","静岡県"];
+// エリア9区分（表示順）
+const REGIONS = ["茨城","千葉外房","千葉南房総","千葉内房","千葉湾奥","東京","横浜市内","神奈川湘南","伊豆"];
 const MONTHS_LABEL = ["1","2","3","4","5","6","7","8","9","10","11","12"];
 let DATA=null, SEASON=null, alias2sp=null;
-const state = { q:"", seasonOnly:true, prefs:new Set(), selected:null };
+const state = { q:"", seasonOnly:true, regions:new Set(), selected:null };
 const now = new Date();
 const curMonth = now.getMonth()+1;
+
+// --- エリア分類 -----------------------------------------------------------
+// 千葉の市→区分（外房=太平洋中部、南房総=鴨川〜館山〜南端、内房=東京湾東岸、湾奥=船橋市川浦安）
+const CHIBA_CITY = {
+  "銚子市":"千葉外房","旭市":"千葉外房","匝瑳市":"千葉外房","山武市":"千葉外房",
+  "いすみ市":"千葉外房","勝浦市":"千葉外房","大網白里市":"千葉外房","九十九里町":"千葉外房","御宿町":"千葉外房",
+  "鴨川市":"千葉南房総","館山市":"千葉南房総","南房総市":"千葉南房総",
+  "千葉市":"千葉内房","市原市":"千葉内房","袖ケ浦市":"千葉内房","袖ヶ浦市":"千葉内房",
+  "木更津市":"千葉内房","君津市":"千葉内房","富津市":"千葉内房","安房郡鋸南町":"千葉内房","鋸南町":"千葉内房",
+  "船橋市":"千葉湾奥","市川市":"千葉湾奥","浦安市":"千葉湾奥",
+};
+// 市が空欄の船のための港→区分（座標で検証済み: 太夫崎=鴨川/南房総, 見立外=木更津沖/内房, 元市川=市川/湾奥）
+const CHIBA_PORT = {
+  "外川漁港":"千葉外房","飯岡漁港":"千葉外房","大原港":"千葉外房","御宿漁港":"千葉外房","岩和田港":"千葉外房",
+  "勝浦マリンハーバー":"千葉外房","川津港":"千葉外房","松部漁港":"千葉外房","太東港":"千葉外房","片貝港":"千葉外房",
+  "乙浜漁港":"千葉南房総","和田漁港":"千葉南房総","天津漁港":"千葉南房総","太夫崎漁港":"千葉南房総",
+  "富浦新港":"千葉南房総","洲崎漁港":"千葉南房総","白間津港":"千葉南房総","相浜港":"千葉南房総","伊戸港":"千葉南房総",
+  "寒川港":"千葉内房","木更津港":"千葉内房","竹岡港":"千葉内房","見立外漁港":"千葉内房","金谷港":"千葉内房","保田港":"千葉内房",
+  "船橋港":"千葉湾奥","元市川港":"千葉湾奥",
+};
+// 横浜市内と判定する港（金沢区・本牧・鶴見）。それ以外の神奈川は湘南（三浦・西湘含む）
+// 福浦港は湯河原(湘南)なので含めない。金沢/柴/本牧/鶴見/子安/新山下=横浜金沢区・市内
+const YOKOHAMA_PORT = /金沢|柴漁港|本牧|鶴見|子安|新山下/;
+
+function regionOf(s){
+  const p=s.pref||"", c=s.city||"", port=s.port||"";
+  if(p.startsWith("茨城")) return "茨城";
+  if(p.startsWith("静岡")) return "伊豆";
+  if(p.startsWith("東京")) return "東京";
+  if(p.startsWith("埼玉")) return "千葉湾奥";           // 三郷・戸田の河川船は湾奥水系
+  if(p.startsWith("神奈川")){
+    if(c==="横浜市" || YOKOHAMA_PORT.test(port)) return "横浜市内";
+    return "神奈川湘南";
+  }
+  if(p.startsWith("千葉")){
+    if(CHIBA_CITY[c]) return CHIBA_CITY[c];
+    if(CHIBA_PORT[port]) return CHIBA_PORT[port];
+    if(/船橋|市川|浦安|行徳|放水路/.test(port)) return "千葉湾奥";
+    return "千葉内房";                                  // 不明時は内房（千葉市寄り）
+  }
+  return "";
+}
 
 function jpSeasonName(m){
   return ({1:"真冬",2:"晩冬",3:"早春",4:"春",5:"晩春",6:"初夏",7:"盛夏",8:"盛夏",9:"初秋",10:"秋",11:"晩秋",12:"初冬"})[m];
@@ -204,6 +247,7 @@ function shipsForSpecies(sp){
 }
 
 function buildIndexes(){
+  DATA.ships.forEach(s=>{ s._region = regionOf(s); });
   alias2sp={};
   SEASON.species.forEach(sp=>{
     sp._ships = shipsForSpecies(sp);
@@ -214,19 +258,19 @@ function buildIndexes(){
 
 function speciesShipsFiltered(sp){
   let ships=sp._ships;
-  if(state.prefs.size) ships=ships.filter(s=>state.prefs.has(s.pref));
+  if(state.regions.size) ships=ships.filter(s=>state.regions.has(s._region));
   return ships;
 }
 
 function renderPrefRow(){
   const row=document.getElementById('prefRow'); row.innerHTML="";
-  PREFS.forEach(p=>{
-    // データに存在する県のみ表示
-    if(!DATA.ships.some(s=>s.pref===p)) return;
+  REGIONS.forEach(r=>{
+    // データに1隻以上ある区分のみ表示
+    if(!DATA.ships.some(s=>s._region===r)) return;
     const el=document.createElement('div');
-    el.className="pref"+(state.prefs.has(p)?" on":"");
-    el.textContent=p.replace(/[都府県]$/,"");
-    el.onclick=()=>{ state.prefs.has(p)?state.prefs.delete(p):state.prefs.add(p); renderPrefRow(); renderGrid(); };
+    el.className="pref"+(state.regions.has(r)?" on":"");
+    el.textContent=r;
+    el.onclick=()=>{ state.regions.has(r)?state.regions.delete(r):state.regions.add(r); renderPrefRow(); renderGrid(); };
     row.appendChild(el);
   });
 }
@@ -239,7 +283,7 @@ function renderGrid(){
   // 検索
   if(q) list=list.filter(sp=> sp.name.includes(q) || sp.aliases.some(a=>a.includes(q)) );
   // 県フィルタ（その県で出船する船がある種のみ）
-  if(state.prefs.size) list=list.filter(sp=> speciesShipsFiltered(sp).length>0 );
+  if(state.regions.size) list=list.filter(sp=> speciesShipsFiltered(sp).length>0 );
   // 釣期のみ
   if(state.seasonOnly) list=list.filter(inSeason);
 
@@ -289,7 +333,7 @@ function openDetail(sp){
   const portMap=new Map();
   ships.forEach(s=>{
     const key=s.port||"（港名不明）";
-    if(!portMap.has(key)) portMap.set(key,{port:key,pref:s.pref,city:s.city,ships:[]});
+    if(!portMap.has(key)) portMap.set(key,{port:key,pref:s.pref,city:s.city,region:s._region,ships:[]});
     portMap.get(key).ships.push(s);
   });
   const ports=[...portMap.values()];
@@ -307,7 +351,7 @@ function openDetail(sp){
     cal+='<div class="m'+(isPeak?' peak':(isIn?' in':''))+(isCur?' cur':'')+'">'+MONTHS_LABEL[m-1]+'</div>';
   }
 
-  const prefNote = state.prefs.size ? '（'+[...state.prefs].map(p=>p.replace(/[都府県]$/,"")).join('・')+'に絞込中）' : '';
+  const prefNote = state.regions.size ? '（'+[...state.regions].join('・')+'に絞込中）' : '';
 
   let html='';
   html+='<div class="dhead">'+
@@ -327,7 +371,7 @@ function openDetail(sp){
   ports.forEach(p=>{
     html+='<div class="port"><div class="ph">'+
       '<span class="pn">⚓ '+p.port+'</span>'+
-      '<span class="pp">'+(p.pref||"")+(p.city?" "+p.city:"")+'</span>'+
+      '<span class="pp">'+(p.region||"")+(p.city?" / "+p.city:"")+'</span>'+
       '<span class="pc">'+p.ships.length+'船</span></div>';
     p.ships.forEach(s=>{
       const others=s.fish.filter(f=>!al.has(f));
