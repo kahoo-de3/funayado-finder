@@ -64,15 +64,16 @@
   /* species grid */
   .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(104px,1fr)); gap:8px}
   .fish{
-    background:var(--panel); border:1px solid var(--line); border-radius:13px;
-    padding:10px 8px 9px; text-align:center; cursor:pointer; position:relative;
-    transition:transform .08s, border-color .12s, background .12s;
+    background:linear-gradient(180deg,#3f9bd6,#2c86c8); border:1px solid #2a7fbe; border-radius:13px;
+    padding:10px 8px 9px; text-align:center; cursor:pointer; position:relative; color:#fff;
+    box-shadow:0 2px 6px rgba(30,90,140,.18);
+    transition:transform .08s, box-shadow .12s, filter .12s;
   }
   .fish:active{transform:scale(.96)}
   .fish .em{font-size:24px; line-height:1}
-  .fish .nm{font-size:13px; font-weight:700; margin-top:4px; word-break:break-all}
-  .fish .mi{font-size:10.5px; color:var(--sub); margin-top:3px}
-  .fish .cnt{font-size:10.5px; color:#2f86c0; margin-top:2px}
+  .fish .nm{font-size:13px; font-weight:700; margin-top:4px; word-break:break-all; color:#fff}
+  .fish .mi{font-size:10.5px; color:rgba(255,255,255,.8); margin-top:3px}
+  .fish .cnt{font-size:10.5px; color:#eaf5ff; font-weight:700; margin-top:2px}
   .empty{color:var(--sub); text-align:center; padding:30px 10px; font-size:14px}
 
   /* detail */
