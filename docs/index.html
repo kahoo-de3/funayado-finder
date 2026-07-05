@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0b3d5c">
-<title>関東 釣船ファインダー｜魚種で探す出船情報</title>
+<title>釣船検索 【関東編】｜魚種で探す出船情報</title>
 <style>
   :root{
     --bg:#0b1f2a; --panel:#0f2c3d; --panel2:#123646; --line:#1d4d63;
@@ -131,7 +131,7 @@
 </head>
 <body>
 <header>
-  <h1>🎣 関東 釣船ファインダー</h1>
+  <h1>釣船検索 【関東編】</h1>
   <p class="sub">魚種を選ぶだけ ─ 今どの漁港・どの釣船から出船しているか</p>
   <span class="season" id="seasonTag">季節を判定中…</span>
 </header>
@@ -148,7 +148,7 @@
         <input id="q" type="search" placeholder="魚種を検索（例：マダイ、タチウオ、イカ）" autocomplete="off">
       </div>
       <div class="row">
-        <div class="toggle" id="tgSeason"><span class="dot"></span>今が釣期の魚のみ</div>
+        <div class="toggle" id="tgSeason"><span class="dot"></span>現在出船しているもの</div>
       </div>
     </div>
     <div class="grid" id="grid"></div>
@@ -305,7 +305,7 @@ function renderGrid(){
   grid.innerHTML="";
   if(!list.length){
     empty.style.display="block";
-    empty.textContent = state.seasonOnly ? "この条件で今が釣期の魚が見つかりません。「今が釣期の魚のみ」をオフにするか、検索語・エリアを見直してください。" : "該当する魚種がありません。";
+    empty.textContent = state.seasonOnly ? "この条件で現在出船している魚が見つかりません。「現在出船しているもの」をオフにするか、検索語・エリアを見直してください。" : "該当する魚種がありません。";
     return;
   }
   empty.style.display="none";
