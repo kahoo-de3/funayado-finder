@@ -266,6 +266,12 @@ function speciesShipsFiltered(sp){
 
 function renderPrefRow(){
   const row=document.getElementById('prefRow'); row.innerHTML="";
+  // 「全て」＝絞り込み解除（全エリア表示）。未選択時はハイライト
+  const all=document.createElement('div');
+  all.className="pref"+(state.regions.size===0?" on":"");
+  all.textContent="全て";
+  all.onclick=()=>{ state.regions.clear(); renderPrefRow(); renderGrid(); };
+  row.appendChild(all);
   REGIONS.forEach(r=>{
     // データに1隻以上ある区分のみ表示
     if(!DATA.ships.some(s=>s._region===r)) return;
